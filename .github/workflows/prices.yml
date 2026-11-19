@@ -1,0 +1,43 @@
+name: Prices
+
+on:
+  schedule:
+    # Daily at 05:17 UTC (06:17/07:17 in the Netherlands), after AH's Bonus switches over.
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prices
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch prices
+        run: npm run fetch
+
+      - name: Commit prices.json if it changed
+        run: |
+          if git diff --quiet -- prices.json; then
+            echo "prices.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prices.json
+          git commit -m "Update prices $(date -u +%Y-%m-%d)"
+          git push

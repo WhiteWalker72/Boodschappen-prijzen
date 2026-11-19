@@ -1,0 +1,1146 @@
+{
+ "version": 1,
+ "generatedAt": "2026-11-19T06:50:06.184Z",
+ "products": {
+  "aardappelkroketjes": {
+   "ah": {
+    "label": "AH Aardappelkroketjes 600 g",
+    "packSize": 600,
+    "packUnit": "g",
+    "priceCents": 95
+   },
+   "lidl": {
+    "label": "Aardappelkroketjes (diepvries) 750 g",
+    "packSize": 750,
+    "packUnit": "g",
+    "priceCents": 139
+   }
+  },
+  "aardappelschijfje": {
+   "ah": {
+    "label": "AH Aardappelschijfjes 600 g",
+    "packSize": 600,
+    "packUnit": "g",
+    "priceCents": 119
+   },
+   "lidl": {
+    "label": "Chef Select Aardappelschijfjes 700 g",
+    "packSize": 700,
+    "packUnit": "g",
+    "priceCents": 129
+   }
+  },
+  "avocado": {
+   "ah": {
+    "label": "AH Avocado per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 139
+   },
+   "lidl": {
+    "label": "Avocado per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 129
+   }
+  },
+  "basilicum": {
+   "ah": {
+    "label": "AH Basilicum 22 g",
+    "packSize": 22,
+    "packUnit": "g",
+    "priceCents": 129
+   },
+   "lidl": {
+    "label": "Bio basilicum in pot",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 189
+   }
+  },
+  "bloemkool": {
+   "ah": {
+    "label": "AH Biologisch Bloemkool per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 299
+   },
+   "lidl": {
+    "label": "Bloemkool per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 165
+   }
+  },
+  "broccoli": {
+   "ah": {
+    "label": "AH Broccoli 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 259
+   },
+   "lidl": {
+    "label": "Broccoli 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 149
+   }
+  },
+  "bulgur": {
+   "ah": {
+    "label": "AH Biologisch Volkoren bulgur 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 159
+   }
+  },
+  "cherrytomaat": {
+   "ah": {
+    "label": "AH Cherrytomaten 250 g",
+    "packSize": 250,
+    "packUnit": "g",
+    "priceCents": 105
+   },
+   "lidl": {
+    "label": "Rode snacktomaten 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 275
+   }
+  },
+  "citroen": {
+   "ah": {
+    "label": "AH Citroen per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 69
+   },
+   "lidl": {
+    "label": "Bio citroen per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 65
+   }
+  },
+  "courgette": {
+   "ah": {
+    "label": "AH Courgette per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 85
+   },
+   "lidl": {
+    "label": "Courgette per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 79
+   }
+  },
+  "creme fraiche": {
+   "ah": {
+    "label": "AH Crème fraîche 30% vet 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 179
+   },
+   "lidl": {
+    "label": "Milbona Crème fraîche 200 ml",
+    "packSize": 200,
+    "packUnit": "ml",
+    "priceCents": 95
+   }
+  },
+  "diepvries edamame": {
+   "ah": {
+    "label": "AH Terra Gepelde edamame boontjes 450 g",
+    "packSize": 450,
+    "packUnit": "g",
+    "priceCents": 249
+   }
+  },
+  "ei": {
+   "ah": {
+    "label": "AH Witte vrije-uitloopeieren M 6 stuks",
+    "packSize": 6,
+    "packUnit": "stuks",
+    "priceCents": 199
+   },
+   "lidl": {
+    "label": "Scharreleieren M 10 stuks",
+    "packSize": 10,
+    "packUnit": "stuks",
+    "priceCents": 259
+   }
+  },
+  "falafelballetjes": {
+   "ah": {
+    "label": "AH Terra Biologische falafel 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 148
+   },
+   "lidl": {
+    "label": "Vemondo Falafel 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 179
+   }
+  },
+  "feta": {
+   "ah": {
+    "label": "AH Griekse feta 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 175
+   },
+   "lidl": {
+    "label": "Eridanous Griekse feta 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 179
+   }
+  },
+  "garam masala": {
+   "ah": {
+    "label": "Verstegen Garam masala 33 g",
+    "packSize": 33,
+    "packUnit": "g",
+    "priceCents": 299
+   }
+  },
+  "gepelde tomaat": {
+   "ah": {
+    "label": "AH Tomaten gepeld 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 64
+   },
+   "lidl": {
+    "label": "Baresa Gepelde tomaten 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 55
+   }
+  },
+  "geraspte cheddar": {
+   "ah": {
+    "label": "AH Cheddar geraspt 150 g",
+    "packSize": 150,
+    "packUnit": "g",
+    "priceCents": 299,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 voor €5,00",
+     "validFrom": "2026-11-16",
+     "validUntil": "2026-11-22"
+    }
+   },
+   "lidl": {
+    "label": "Milbona Geraspte cheddar 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 199
+   }
+  },
+  "geraspte mozzarella": {
+   "ah": {
+    "label": "AH Mozzarella geraspt 150 g",
+    "packSize": 150,
+    "packUnit": "g",
+    "priceCents": 279,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 voor €5,00",
+     "validFrom": "2026-11-16",
+     "validUntil": "2026-11-22"
+    }
+   },
+   "lidl": {
+    "label": "Milbona Geraspte mozzarella 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 179
+   }
+  },
+  "geraspte oude kaas": {
+   "ah": {
+    "label": "AH Goudse oud 48+ geraspt 175 g",
+    "packSize": 175,
+    "packUnit": "g",
+    "priceCents": 429
+   },
+   "lidl": {
+    "label": "Milbona Geraspte oude kaas 175 g",
+    "packSize": 175,
+    "packUnit": "g",
+    "priceCents": 249
+   }
+  },
+  "gnocchi": {
+   "ah": {
+    "label": "AH Gnocchi 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 149
+   },
+   "lidl": {
+    "label": "Combino Gnocchi 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 109
+   }
+  },
+  "gochujang": {
+   "ah": {
+    "label": "Sempio Gochujang 250 g",
+    "packSize": 250,
+    "packUnit": "g",
+    "priceCents": 279
+   }
+  },
+  "granaatappel": {
+   "ah": {
+    "label": "AH Granaatappel per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 199
+   },
+   "lidl": {
+    "label": "Granaatappel per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 99
+   }
+  },
+  "griekse yoghurt": {
+   "ah": {
+    "label": "AH Yoghurt Griekse stijl 5% 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 179
+   },
+   "lidl": {
+    "label": "Milbona Griekse stijl yoghurt 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 189
+   }
+  },
+  "groene pesto": {
+   "ah": {
+    "label": "AH Groene pesto 190 g",
+    "packSize": 190,
+    "packUnit": "g",
+    "priceCents": 113
+   },
+   "lidl": {
+    "label": "Baresa Pesto verde 190 g",
+    "packSize": 190,
+    "packUnit": "g",
+    "priceCents": 129
+   }
+  },
+  "groentebouillon": {
+   "ah": {
+    "label": "AH Bouillon groente (tabletten) 120 g",
+    "packSize": 120,
+    "packUnit": "g",
+    "priceCents": 54
+   },
+   "lidl": {
+    "label": "Kania Groentebouillon blokjes 100 g",
+    "packSize": 100,
+    "packUnit": "g",
+    "priceCents": 69
+   }
+  },
+  "grote pitabroodje": {
+   "ah": {
+    "label": "AH Witte pita’s 5 stuks",
+    "packSize": 5,
+    "packUnit": "stuks",
+    "priceCents": 85
+   }
+  },
+  "halloumi": {
+   "ah": {
+    "label": "AH Halloumi 225 g",
+    "packSize": 225,
+    "packUnit": "g",
+    "priceCents": 269
+   },
+   "lidl": {
+    "label": "Eridanous Halloumi 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 229
+   }
+  },
+  "harissa": {
+   "ah": {
+    "label": "Souq Milde harissa 190 g",
+    "packSize": 190,
+    "packUnit": "g",
+    "priceCents": 399
+   }
+  },
+  "hummus": {
+   "ah": {
+    "label": "AH Terra Hummus naturel 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 128
+   },
+   "lidl": {
+    "label": "Chef Select Hummus naturel 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 129
+   }
+  },
+  "ijsbergsla": {
+   "ah": {
+    "label": "AH IJsbergsla per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 109
+   },
+   "lidl": {
+    "label": "IJsbergsla per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 95
+   }
+  },
+  "kikkererwt": {
+   "ah": {
+    "label": "AH Terra Kikkererwten 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 89
+   },
+   "lidl": {
+    "label": "Freshona Kikkererwten 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 65
+   }
+  },
+  "knoflook": {
+   "ah": {
+    "label": "AH Knoflook 2 bollen",
+    "packSize": 2,
+    "packUnit": "stuks",
+    "priceCents": 119
+   },
+   "lidl": {
+    "label": "Knoflook 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 139
+   }
+  },
+  "knoflooksaus": {
+   "ah": {
+    "label": "AH Knoflooksaus 300 ml",
+    "packSize": 300,
+    "packUnit": "ml",
+    "priceCents": 114
+   },
+   "lidl": {
+    "label": "Kania Knoflooksaus 300 ml",
+    "packSize": 300,
+    "packUnit": "ml",
+    "priceCents": 109
+   }
+  },
+  "kokosmelk": {
+   "ah": {
+    "label": "AH Kokosmelk 200 ml",
+    "packSize": 200,
+    "packUnit": "ml",
+    "priceCents": 127
+   },
+   "lidl": {
+    "label": "Vitasia Kokosmelk 400 ml",
+    "packSize": 400,
+    "packUnit": "ml",
+    "priceCents": 119
+   }
+  },
+  "komkommer": {
+   "ah": {
+    "label": "AH Komkommer per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 85
+   },
+   "lidl": {
+    "label": "Komkommer per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 79
+   }
+  },
+  "koriander": {
+   "ah": {
+    "label": "AH Koriander 15 g",
+    "packSize": 15,
+    "packUnit": "g",
+    "priceCents": 129
+   }
+  },
+  "krieltje": {
+   "ah": {
+    "label": "AH Mini krieltjes 600 g",
+    "packSize": 600,
+    "packUnit": "g",
+    "priceCents": 119
+   },
+   "lidl": {
+    "label": "Chef Select Mini krieltjes naturel 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 159
+   }
+  },
+  "lente-ui": {
+   "ah": {
+    "label": "AH Bosui per bosje",
+    "packSize": 6,
+    "packUnit": "stuks",
+    "priceCents": 99
+   },
+   "lidl": {
+    "label": "Lente-ui per bosje",
+    "packSize": 6,
+    "packUnit": "stuks",
+    "priceCents": 89
+   }
+  },
+  "limoen": {
+   "ah": {
+    "label": "AH Limoen per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 69
+   },
+   "lidl": {
+    "label": "Limoenen 3 stuks",
+    "packSize": 3,
+    "packUnit": "stuks",
+    "priceCents": 99
+   }
+  },
+  "linze": {
+   "ah": {
+    "label": "AH Terra Linzen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 96
+   },
+   "lidl": {
+    "label": "Freshona Linzen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 79
+   }
+  },
+  "mais": {
+   "ah": {
+    "label": "AH Maiskorrels 340 g",
+    "packSize": 340,
+    "packUnit": "g",
+    "priceCents": 119
+   },
+   "lidl": {
+    "label": "Freshona Maïs 340 g",
+    "packSize": 340,
+    "packUnit": "g",
+    "priceCents": 79
+   }
+  },
+  "mango chutney": {
+   "ah": {
+    "label": "Patak’s Mango chutney 340 g",
+    "packSize": 340,
+    "packUnit": "g",
+    "priceCents": 349
+   }
+  },
+  "mayonaise": {
+   "ah": {
+    "label": "AH Mayonaise zacht en romig 170 ml",
+    "packSize": 170,
+    "packUnit": "ml",
+    "priceCents": 69
+   },
+   "lidl": {
+    "label": "Kania Mayonaise 500 ml",
+    "packSize": 500,
+    "packUnit": "ml",
+    "priceCents": 129
+   }
+  },
+  "mozzarella": {
+   "ah": {
+    "label": "AH Mozzarella",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 85
+   },
+   "lidl": {
+    "label": "Milbona Mozzarella 125 g",
+    "packSize": 125,
+    "packUnit": "g",
+    "priceCents": 69
+   }
+  },
+  "naanbroden": {
+   "ah": {
+    "label": "AH Naanbrood 240 g (2 stuks)",
+    "packSize": 2,
+    "packUnit": "stuks",
+    "priceCents": 179
+   }
+  },
+  "orzo": {
+   "ah": {
+    "label": "AH Biologisch Orzo 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 189
+   }
+  },
+  "ovenfriet": {
+   "ah": {
+    "label": "AH Airfryer ovenfriet 750 g",
+    "packSize": 750,
+    "packUnit": "g",
+    "priceCents": 111
+   },
+   "lidl": {
+    "label": "Harvest Basket Ovenfriet 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 148
+   }
+  },
+  "paneer": {
+   "ah": {
+    "label": "Param Paneer 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 249
+   }
+  },
+  "paprika": {
+   "ah": {
+    "label": "AH Paprika rood per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 129
+   },
+   "lidl": {
+    "label": "Paprikamix 500 g (3 stuks)",
+    "packSize": 3,
+    "packUnit": "stuks",
+    "priceCents": 165
+   }
+  },
+  "passata": {
+   "ah": {
+    "label": "AH Tomaten passata 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 58
+   },
+   "lidl": {
+    "label": "Baresa Passata 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 59
+   }
+  },
+  "peterselie": {
+   "ah": {
+    "label": "AH Platte peterselie 15 g",
+    "packSize": 15,
+    "packUnit": "g",
+    "priceCents": 129
+   },
+   "lidl": {
+    "label": "Bio peterselie in pot",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 189
+   }
+  },
+  "pitabroodje": {
+   "ah": {
+    "label": "AH Pita broodjes 10 stuks",
+    "packSize": 10,
+    "packUnit": "stuks",
+    "priceCents": 79
+   },
+   "lidl": {
+    "label": "Tastino Pitabroodjes 400 g",
+    "packSize": 6,
+    "packUnit": "stuks",
+    "priceCents": 85
+   }
+  },
+  "ras el hanout": {
+   "ah": {
+    "label": "Verstegen Ras el hanout 34 g",
+    "packSize": 34,
+    "packUnit": "g",
+    "priceCents": 299
+   }
+  },
+  "rijst": {
+   "ah": {
+    "label": "AH Basmatirijst 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 129
+   },
+   "lidl": {
+    "label": "Golden Sun Basmatirijst 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 179
+   }
+  },
+  "rode linze": {
+   "ah": {
+    "label": "AH Terra Biologisch rode linzen 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 199
+   },
+   "lidl": {
+    "label": "Golden Sun Rode linzen 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 129
+   }
+  },
+  "rode ui": {
+   "ah": {
+    "label": "AH Rode uien 3 stuks",
+    "packSize": 3,
+    "packUnit": "stuks",
+    "priceCents": 109
+   },
+   "lidl": {
+    "label": "Rode uien 750 g",
+    "packSize": 750,
+    "packUnit": "g",
+    "priceCents": 85
+   }
+  },
+  "rodekool": {
+   "ah": {
+    "label": "AH Biologisch Rode kool per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 199
+   },
+   "lidl": {
+    "label": "Rode kool per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 149
+   }
+  },
+  "roerbakgroenten": {
+   "ah": {
+    "label": "AH Roerbakgroente Italiaans 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 229,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 voor €3,99",
+     "validFrom": "2026-11-16",
+     "validUntil": "2026-11-22"
+    }
+   },
+   "lidl": {
+    "label": "Roerbakgroente 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 149
+   }
+  },
+  "rucola": {
+   "ah": {
+    "label": "AH Rucola 85 g",
+    "packSize": 85,
+    "packUnit": "g",
+    "priceCents": 109
+   },
+   "lidl": {
+    "label": "Rucola 75 g",
+    "packSize": 75,
+    "packUnit": "g",
+    "priceCents": 99
+   }
+  },
+  "sambal": {
+   "ah": {
+    "label": "AH Sambal oelek 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 99
+   },
+   "lidl": {
+    "label": "Vitasia Sambal oelek 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 89
+   }
+  },
+  "sesamzaad": {
+   "ah": {
+    "label": "AH Sesamzaad 100 g",
+    "packSize": 100,
+    "packUnit": "g",
+    "priceCents": 299
+   }
+  },
+  "sla": {
+   "ah": {
+    "label": "AH Kropsla per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 79
+   },
+   "lidl": {
+    "label": "Kropsla met kluit per stuk",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 62
+   }
+  },
+  "snelkookrijst": {
+   "ah": {
+    "label": "AH Witte snelkookrijst 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 45
+   },
+   "lidl": {
+    "label": "Golden Sun Snelkookrijst 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 139
+   }
+  },
+  "spinazie": {
+   "ah": {
+    "label": "AH Spinazie 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 189
+   },
+   "lidl": {
+    "label": "Gewassen spinazie 450 g",
+    "packSize": 450,
+    "packUnit": "g",
+    "priceCents": 179
+   }
+  },
+  "sriracha": {
+   "ah": {
+    "label": "Go-Tan Sriracha 290 ml",
+    "packSize": 290,
+    "packUnit": "ml",
+    "priceCents": 315
+   }
+  },
+  "sushirijst": {
+   "ah": {
+    "label": "AH Sushi rijst 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 249
+   }
+  },
+  "tacokruiden": {
+   "ah": {
+    "label": "AH Taco seasoning mix 35 g",
+    "packSize": 35,
+    "packUnit": "g",
+    "priceCents": 83
+   }
+  },
+  "tandoori kruiden": {
+   "ah": {
+    "label": "Verstegen Tandoori masala 34 g",
+    "packSize": 34,
+    "packUnit": "g",
+    "priceCents": 319
+   }
+  },
+  "tempeh": {
+   "ah": {
+    "label": "AH Terra Tempeh 250 g",
+    "packSize": 250,
+    "packUnit": "g",
+    "priceCents": 159
+   },
+   "lidl": {
+    "label": "Vemondo Plantaardige tempehblokjes 180 g",
+    "packSize": 180,
+    "packUnit": "g",
+    "priceCents": 185
+   }
+  },
+  "teriyakisaus": {
+   "ah": {
+    "label": "AH Woksaus teriyaki 180 ml",
+    "packSize": 180,
+    "packUnit": "ml",
+    "priceCents": 149
+   }
+  },
+  "tikka masala kruiden": {
+   "ah": {
+    "label": "AH Tikka masala kruidenpasta 90 g",
+    "packSize": 90,
+    "packUnit": "g",
+    "priceCents": 139
+   }
+  },
+  "tofu": {
+   "ah": {
+    "label": "AH Terra Biologische tofu 325 g",
+    "packSize": 325,
+    "packUnit": "g",
+    "priceCents": 121
+   },
+   "lidl": {
+    "label": "Vemondo Tofu naturel 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 199
+   }
+  },
+  "tomaat": {
+   "ah": {
+    "label": "AH Tomaten 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 189
+   },
+   "lidl": {
+    "label": "Trostomaten 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 190
+   }
+  },
+  "tomatensalsa": {
+   "ah": {
+    "label": "AH Salsa mild 300 g",
+    "packSize": 300,
+    "packUnit": "g",
+    "priceCents": 115
+   }
+  },
+  "tzatziki": {
+   "ah": {
+    "label": "AH Tzatziki 150 g",
+    "packSize": 150,
+    "packUnit": "g",
+    "priceCents": 145
+   },
+   "lidl": {
+    "label": "Eridanous Tzatziki 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 119
+   }
+  },
+  "ui": {
+   "ah": {
+    "label": "AH Gele uien 3 stuks",
+    "packSize": 3,
+    "packUnit": "stuks",
+    "priceCents": 89
+   },
+   "lidl": {
+    "label": "Uien 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 79
+   }
+  },
+  "vastkokende aardappel": {
+   "ah": {
+    "label": "AH Vastkokende aardappelen 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 129
+   },
+   "lidl": {
+    "label": "Aardappelen vastkokend 2 kg",
+    "packSize": 2000,
+    "packUnit": "g",
+    "priceCents": 199
+   }
+  },
+  "vega kipstukjes": {
+   "ah": {
+    "label": "AH Terra Plantaardige kipstukjes 300 g",
+    "packSize": 300,
+    "packUnit": "g",
+    "priceCents": 345
+   },
+   "lidl": {
+    "label": "Vemondo Plantaardige kipstukjes 160 g",
+    "packSize": 160,
+    "packUnit": "g",
+    "priceCents": 199
+   }
+  },
+  "vegetarische balletjes": {
+   "ah": {
+    "label": "AH Terra Plantaardige balletjes 200 g",
+    "packSize": 200,
+    "packUnit": "g",
+    "priceCents": 149
+   },
+   "lidl": {
+    "label": "Vemondo Vega balletjes 384 g",
+    "packSize": 384,
+    "packUnit": "g",
+    "priceCents": 269
+   }
+  },
+  "vegetarische gyros": {
+   "ah": {
+    "label": "Vivera Plantaardige gyros 175 g",
+    "packSize": 175,
+    "packUnit": "g",
+    "priceCents": 369
+   }
+  },
+  "vegetarische shoarma": {
+   "ah": {
+    "label": "AH Terra Plantaardige shoarma 300 g",
+    "packSize": 300,
+    "packUnit": "g",
+    "priceCents": 299
+   },
+   "lidl": {
+    "label": "Vemondo Plantaardige shoarma 300 g",
+    "packSize": 300,
+    "packUnit": "g",
+    "priceCents": 283
+   }
+  },
+  "verse munt": {
+   "ah": {
+    "label": "AH Munt 15 g",
+    "packSize": 15,
+    "packUnit": "g",
+    "priceCents": 129
+   }
+  },
+  "witte boon": {
+   "ah": {
+    "label": "AH Terra Witte bonen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 89
+   },
+   "lidl": {
+    "label": "Freshona Witte bonen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 59
+   }
+  },
+  "wortel": {
+   "ah": {
+    "label": "AH Wortelen 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 129
+   },
+   "lidl": {
+    "label": "Waspeen 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 99
+   }
+  },
+  "wrap": {
+   "ah": {
+    "label": "AH Tortilla wraps naturel medium 8 stuks",
+    "packSize": 8,
+    "packUnit": "stuks",
+    "priceCents": 92
+   },
+   "lidl": {
+    "label": "Tastino Tortilla wraps 6 stuks",
+    "packSize": 6,
+    "packUnit": "stuks",
+    "priceCents": 99
+   }
+  },
+  "za'atar": {
+   "ah": {
+    "label": "Verstegen Za’atar 27 g",
+    "packSize": 27,
+    "packUnit": "g",
+    "priceCents": 349
+   }
+  },
+  "zoete aardappel": {
+   "ah": {
+    "label": "AH Oranje zoete aardappel 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 349
+   },
+   "lidl": {
+    "label": "Zoete aardappelen 1 kg",
+    "packSize": 1000,
+    "packUnit": "g",
+    "priceCents": 229
+   }
+  },
+  "zure room": {
+   "ah": {
+    "label": "AH Sour cream 125 g",
+    "packSize": 125,
+    "packUnit": "g",
+    "priceCents": 119
+   },
+   "lidl": {
+    "label": "Milbona Zure room 125 g",
+    "packSize": 125,
+    "packUnit": "g",
+    "priceCents": 89
+   }
+  },
+  "zwarte boon": {
+   "ah": {
+    "label": "AH Terra Zwarte bonen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 90
+   },
+   "lidl": {
+    "label": "Freshona Zwarte bonen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 69
+   }
+  }
+ }
+}

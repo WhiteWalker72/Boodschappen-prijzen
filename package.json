@@ -1,0 +1,17 @@
+{
+  "name": "boodschappen-prijzen",
+  "private": true,
+  "type": "module",
+  "description": "Daily Lidl and Albert Heijn prices for the Boodschappenlijstje app.",
+  "scripts": {
+    "fetch": "tsx scripts/fetch-prices.ts",
+    "list-ingredients": "tsx scripts/list-ingredients.ts",
+    "check-mapping": "tsx scripts/list-ingredients.ts --check",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,754 @@
+{
+  "aardappelkroketjes": {
+    "ah": {
+      "id": 772,
+      "label": "AH Aardappelkroketjes 600 g"
+    }
+  },
+  "aardappelschijfje": {
+    "ah": {
+      "id": 155600,
+      "label": "AH Aardappelschijfjes 600 g"
+    },
+    "lidl": {
+      "id": 11317763,
+      "label": "Chef Select Aardappelschijfjes 700 g",
+      "pack": {
+        "size": 700,
+        "unit": "g"
+      }
+    }
+  },
+  "avocado": {
+    "ah": {
+      "id": 169797,
+      "label": "AH Avocado per stuk"
+    },
+    "lidl": {
+      "id": 11150914,
+      "label": "Avocado per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "basilicum": {
+    "ah": {
+      "id": 611642,
+      "label": "AH Basilicum 22 g"
+    },
+    "lidl": {
+      "id": 11151272,
+      "label": "Bio basilicum in pot",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "bloemkool": {
+    "ah": {
+      "id": 186629,
+      "label": "AH Biologisch Bloemkool per stuk"
+    },
+    "lidl": {
+      "id": 11041473,
+      "label": "Bloemkool per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "broccoli": {
+    "ah": {
+      "id": 395954,
+      "label": "AH Broccoli 400 g"
+    }
+  },
+  "bulgur": {
+    "ah": {
+      "id": 525390,
+      "label": "AH Biologisch Volkoren bulgur 400 g"
+    }
+  },
+  "cherrytomaat": {
+    "ah": {
+      "id": 4137,
+      "label": "AH Cherrytomaten 250 g"
+    },
+    "lidl": {
+      "id": 11029802,
+      "label": "Rode snacktomaten 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
+    }
+  },
+  "citroen": {
+    "ah": {
+      "id": 230708,
+      "label": "AH Citroen per stuk"
+    },
+    "lidl": {
+      "id": 11214544,
+      "label": "Bio citroen per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "courgette": {
+    "ah": {
+      "id": 4164,
+      "label": "AH Courgette per stuk"
+    }
+  },
+  "creme fraiche": {
+    "ah": {
+      "id": 46745,
+      "label": "AH Crème fraîche 30% vet 200 g"
+    }
+  },
+  "diepvries edamame": {
+    "ah": {
+      "id": 514806,
+      "label": "AH Terra Gepelde edamame boontjes 450 g"
+    }
+  },
+  "ei": {
+    "ah": {
+      "id": 442922,
+      "label": "AH Witte vrije-uitloopeieren M 6 stuks"
+    }
+  },
+  "falafelballetjes": {
+    "ah": {
+      "id": 564793,
+      "label": "AH Terra Biologische falafel 200 g"
+    }
+  },
+  "feta": {
+    "ah": {
+      "id": 462469,
+      "label": "AH Griekse feta 200 g"
+    }
+  },
+  "garam masala": {
+    "ah": {
+      "id": 518844,
+      "label": "Verstegen Garam masala 33 g"
+    }
+  },
+  "gepelde tomaat": {
+    "ah": {
+      "id": 803,
+      "label": "AH Tomaten gepeld 400 g"
+    }
+  },
+  "geraspte cheddar": {
+    "ah": {
+      "id": 454161,
+      "label": "AH Cheddar geraspt 150 g"
+    }
+  },
+  "geraspte mozzarella": {
+    "ah": {
+      "id": 232017,
+      "label": "AH Mozzarella geraspt 150 g"
+    }
+  },
+  "geraspte oude kaas": {
+    "ah": {
+      "id": 3853,
+      "label": "AH Goudse oud 48+ geraspt 175 g"
+    }
+  },
+  "gnocchi": {
+    "ah": {
+      "id": 210482,
+      "label": "AH Gnocchi 500 g"
+    }
+  },
+  "gochujang": {
+    "ah": {
+      "id": 518431,
+      "label": "Sempio Gochujang 250 g"
+    }
+  },
+  "granaatappel": {
+    "ah": {
+      "id": 108021,
+      "label": "AH Granaatappel per stuk"
+    }
+  },
+  "griekse yoghurt": {
+    "ah": {
+      "id": 177509,
+      "label": "AH Yoghurt Griekse stijl 5% 500 g"
+    }
+  },
+  "groene pesto": {
+    "ah": {
+      "id": 170655,
+      "label": "AH Groene pesto 190 g"
+    }
+  },
+  "groentebouillon": {
+    "ah": {
+      "id": 492034,
+      "label": "AH Bouillon groente (tabletten) 120 g"
+    }
+  },
+  "grote pitabroodje": {
+    "ah": {
+      "id": 221857,
+      "label": "AH Witte pita’s 5 stuks"
+    }
+  },
+  "halloumi": {
+    "ah": {
+      "id": 613287,
+      "label": "AH Halloumi 225 g"
+    }
+  },
+  "harissa": {
+    "ah": {
+      "id": 450246,
+      "label": "Souq Milde harissa 190 g"
+    }
+  },
+  "hummus": {
+    "ah": {
+      "id": 438961,
+      "label": "AH Terra Hummus naturel 200 g"
+    }
+  },
+  "ijsbergsla": {
+    "ah": {
+      "id": 4099,
+      "label": "AH IJsbergsla per stuk"
+    },
+    "lidl": {
+      "id": 11151017,
+      "label": "IJsbergsla per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "kikkererwt": {
+    "ah": {
+      "id": 167873,
+      "label": "AH Terra Kikkererwten 400 g"
+    }
+  },
+  "knoflook": {
+    "ah": {
+      "id": 4160,
+      "label": "AH Knoflook 2 bollen"
+    },
+    "lidl": {
+      "id": 11029617,
+      "label": "Knoflook 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
+    }
+  },
+  "knoflooksaus": {
+    "ah": {
+      "id": 467793,
+      "label": "AH Knoflooksaus 300 ml"
+    }
+  },
+  "kokosmelk": {
+    "ah": {
+      "id": 161932,
+      "label": "AH Kokosmelk 200 ml"
+    }
+  },
+  "komkommer": {
+    "ah": {
+      "id": 54074,
+      "label": "AH Komkommer per stuk"
+    }
+  },
+  "koriander": {
+    "ah": {
+      "id": 238968,
+      "label": "AH Koriander 15 g"
+    }
+  },
+  "krieltje": {
+    "ah": {
+      "id": 198690,
+      "label": "AH Mini krieltjes 600 g"
+    },
+    "lidl": {
+      "id": 11317818,
+      "label": "Chef Select Mini krieltjes naturel 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
+    }
+  },
+  "lente-ui": {
+    "ah": {
+      "id": 169813,
+      "label": "AH Bosui per bosje",
+      "pack": {
+        "size": 6,
+        "unit": "stuks"
+      }
+    },
+    "lidl": {
+      "id": 11151058,
+      "label": "Lente-ui per bosje",
+      "pack": {
+        "size": 6,
+        "unit": "stuks"
+      }
+    }
+  },
+  "limoen": {
+    "ah": {
+      "id": 231211,
+      "label": "AH Limoen per stuk"
+    },
+    "lidl": {
+      "id": 11030152,
+      "label": "Limoenen 3 stuks",
+      "pack": {
+        "size": 3,
+        "unit": "stuks"
+      }
+    }
+  },
+  "linze": {
+    "ah": {
+      "id": 167872,
+      "label": "AH Terra Linzen 400 g"
+    }
+  },
+  "mais": {
+    "ah": {
+      "id": 800,
+      "label": "AH Maiskorrels 340 g"
+    }
+  },
+  "mango chutney": {
+    "ah": {
+      "id": 126390,
+      "label": "Patak’s Mango chutney 340 g"
+    }
+  },
+  "mayonaise": {
+    "ah": {
+      "id": 425942,
+      "label": "AH Mayonaise zacht en romig 170 ml"
+    }
+  },
+  "mozzarella": {
+    "ah": {
+      "id": 506235,
+      "label": "AH Mozzarella"
+    }
+  },
+  "naanbroden": {
+    "ah": {
+      "id": 498341,
+      "label": "AH Naanbrood 240 g (2 stuks)",
+      "pack": {
+        "size": 2,
+        "unit": "stuks"
+      }
+    }
+  },
+  "orzo": {
+    "ah": {
+      "id": 543585,
+      "label": "AH Biologisch Orzo 500 g"
+    }
+  },
+  "ovenfriet": {
+    "ah": {
+      "id": 195093,
+      "label": "AH Airfryer ovenfriet 750 g"
+    },
+    "lidl": {
+      "id": 11009764,
+      "label": "Harvest Basket Ovenfriet 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
+    }
+  },
+  "paneer": {
+    "ah": {
+      "id": 613283,
+      "label": "Param Paneer 200 g"
+    }
+  },
+  "paprika": {
+    "ah": {
+      "id": 4117,
+      "label": "AH Paprika rood per stuk"
+    },
+    "lidl": {
+      "id": 11151119,
+      "label": "Paprikamix 500 g (3 stuks)",
+      "pack": {
+        "size": 3,
+        "unit": "stuks"
+      }
+    }
+  },
+  "passata": {
+    "ah": {
+      "id": 481844,
+      "label": "AH Tomaten passata 500 g"
+    }
+  },
+  "peterselie": {
+    "ah": {
+      "id": 238971,
+      "label": "AH Platte peterselie 15 g"
+    },
+    "lidl": {
+      "id": 11151259,
+      "label": "Bio peterselie in pot",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "pitabroodje": {
+    "ah": {
+      "id": 221858,
+      "label": "AH Pita broodjes 10 stuks"
+    },
+    "lidl": {
+      "id": 11317685,
+      "label": "Tastino Pitabroodjes 400 g",
+      "pack": {
+        "size": 6,
+        "unit": "stuks"
+      }
+    }
+  },
+  "ras el hanout": {
+    "ah": {
+      "id": 518449,
+      "label": "Verstegen Ras el hanout 34 g"
+    }
+  },
+  "rijst": {
+    "ah": {
+      "id": 80148,
+      "label": "AH Basmatirijst 400 g"
+    }
+  },
+  "rode linze": {
+    "ah": {
+      "id": 469879,
+      "label": "AH Terra Biologisch rode linzen 500 g"
+    }
+  },
+  "rode ui": {
+    "ah": {
+      "id": 490280,
+      "label": "AH Rode uien 3 stuks"
+    },
+    "lidl": {
+      "id": 11151216,
+      "label": "Rode uien 750 g",
+      "pack": {
+        "size": 750,
+        "unit": "g"
+      }
+    }
+  },
+  "rodekool": {
+    "ah": {
+      "id": 160648,
+      "label": "AH Biologisch Rode kool per stuk"
+    },
+    "lidl": {
+      "id": 11266561,
+      "label": "Rode kool per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "roerbakgroenten": {
+    "ah": {
+      "id": 41080,
+      "label": "AH Roerbakgroente Italiaans 400 g"
+    }
+  },
+  "rucola": {
+    "ah": {
+      "id": 111767,
+      "label": "AH Rucola 85 g"
+    }
+  },
+  "sambal": {
+    "ah": {
+      "id": 450146,
+      "label": "AH Sambal oelek 200 g"
+    }
+  },
+  "sesamzaad": {
+    "ah": {
+      "id": 164740,
+      "label": "AH Sesamzaad 100 g"
+    }
+  },
+  "sla": {
+    "ah": {
+      "id": 382984,
+      "label": "AH Kropsla per stuk"
+    },
+    "lidl": {
+      "id": 11029885,
+      "label": "Kropsla met kluit per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
+    }
+  },
+  "snelkookrijst": {
+    "ah": {
+      "id": 948,
+      "label": "AH Witte snelkookrijst 400 g"
+    }
+  },
+  "spinazie": {
+    "ah": {
+      "id": 395948,
+      "label": "AH Spinazie 200 g"
+    },
+    "lidl": {
+      "id": 11492621,
+      "label": "Gewassen spinazie 450 g",
+      "pack": {
+        "size": 450,
+        "unit": "g"
+      }
+    }
+  },
+  "sriracha": {
+    "ah": {
+      "id": 505270,
+      "label": "Go-Tan Sriracha 290 ml"
+    }
+  },
+  "sushirijst": {
+    "ah": {
+      "id": 583715,
+      "label": "AH Sushi rijst 500 g"
+    }
+  },
+  "tacokruiden": {
+    "ah": {
+      "id": 140615,
+      "label": "AH Taco seasoning mix 35 g"
+    }
+  },
+  "tandoori kruiden": {
+    "ah": {
+      "id": 518910,
+      "label": "Verstegen Tandoori masala 34 g"
+    }
+  },
+  "tempeh": {
+    "ah": {
+      "id": 564894,
+      "label": "AH Terra Tempeh 250 g"
+    },
+    "lidl": {
+      "id": 11561840,
+      "label": "Vemondo Plantaardige tempehblokjes 180 g",
+      "pack": {
+        "size": 180,
+        "unit": "g"
+      }
+    }
+  },
+  "teriyakisaus": {
+    "ah": {
+      "id": 482500,
+      "label": "AH Woksaus teriyaki 180 ml"
+    }
+  },
+  "tikka masala kruiden": {
+    "ah": {
+      "id": 592102,
+      "label": "AH Tikka masala kruidenpasta 90 g"
+    }
+  },
+  "tofu": {
+    "ah": {
+      "id": 564897,
+      "label": "AH Terra Biologische tofu 325 g"
+    }
+  },
+  "tomaat": {
+    "ah": {
+      "id": 4088,
+      "label": "AH Tomaten 500 g"
+    },
+    "lidl": {
+      "id": 11151101,
+      "label": "Trostomaten 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
+    }
+  },
+  "tomatensalsa": {
+    "ah": {
+      "id": 31473,
+      "label": "AH Salsa mild 300 g"
+    }
+  },
+  "tzatziki": {
+    "ah": {
+      "id": 494566,
+      "label": "AH Tzatziki 150 g"
+    }
+  },
+  "ui": {
+    "ah": {
+      "id": 525847,
+      "label": "AH Gele uien 3 stuks"
+    }
+  },
+  "vastkokende aardappel": {
+    "ah": {
+      "id": 123866,
+      "label": "AH Vastkokende aardappelen 1 kg"
+    }
+  },
+  "vega kipstukjes": {
+    "ah": {
+      "id": 580545,
+      "label": "AH Terra Plantaardige kipstukjes 300 g"
+    },
+    "lidl": {
+      "id": 11562610,
+      "label": "Vemondo Plantaardige kipstukjes 160 g",
+      "pack": {
+        "size": 160,
+        "unit": "g"
+      }
+    }
+  },
+  "vegetarische balletjes": {
+    "ah": {
+      "id": 397372,
+      "label": "AH Terra Plantaardige balletjes 200 g"
+    },
+    "lidl": {
+      "id": 11560292,
+      "label": "Vemondo Vega balletjes 384 g",
+      "pack": {
+        "size": 384,
+        "unit": "g"
+      }
+    }
+  },
+  "vegetarische gyros": {
+    "ah": {
+      "id": 460410,
+      "label": "Vivera Plantaardige gyros 175 g"
+    }
+  },
+  "vegetarische shoarma": {
+    "ah": {
+      "id": 563706,
+      "label": "AH Terra Plantaardige shoarma 300 g"
+    },
+    "lidl": {
+      "id": 11561082,
+      "label": "Vemondo Plantaardige shoarma 300 g",
+      "pack": {
+        "size": 300,
+        "unit": "g"
+      }
+    }
+  },
+  "verse munt": {
+    "ah": {
+      "id": 238969,
+      "label": "AH Munt 15 g"
+    }
+  },
+  "witte boon": {
+    "ah": {
+      "id": 585656,
+      "label": "AH Terra Witte bonen 400 g"
+    }
+  },
+  "wortel": {
+    "ah": {
+      "id": 221495,
+      "label": "AH Wortelen 500 g"
+    },
+    "lidl": {
+      "id": 11151141,
+      "label": "Waspeen 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
+    }
+  },
+  "wrap": {
+    "ah": {
+      "id": 136836,
+      "label": "AH Tortilla wraps naturel medium 8 stuks",
+      "pack": {
+        "size": 8,
+        "unit": "stuks"
+      }
+    }
+  },
+  "za'atar": {
+    "ah": {
+      "id": 518842,
+      "label": "Verstegen Za’atar 27 g"
+    }
+  },
+  "zoete aardappel": {
+    "ah": {
+      "id": 164358,
+      "label": "AH Oranje zoete aardappel 1 kg"
+    }
+  },
+  "zure room": {
+    "ah": {
+      "id": 3869,
+      "label": "AH Sour cream 125 g"
+    }
+  },
+  "zwarte boon": {
+    "ah": {
+      "id": 188265,
+      "label": "AH Terra Zwarte bonen 400 g"
+    }
+  }
+}
