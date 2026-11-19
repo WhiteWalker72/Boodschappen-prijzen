@@ -14,7 +14,7 @@ There is no backend: this repo is the whole pipeline.
 | --- | --- |
 | `prices.json` | The output. Written by the script, committed by the workflow. |
 | `mapping.json` | Ingredient key → AH and Lidl product. Edited by hand. |
-| `lidl-manual.json` | Lidl prices kept by hand, for ingredients lidl.nl doesn't list. |
+| `lidl-manual.json` | Lidl prices kept by hand, for ingredients no source has. |
 | `mapping-review.md` | Matches and estimates that still need a human check. |
 | `scripts/fetch-prices.ts` | Fetches prices and writes `prices.json`. |
 | `scripts/list-ingredients.ts` | Lists the app's ingredient keys and checks the mapping covers them (needs the app repo next to this one). |
@@ -72,7 +72,8 @@ npm run list-ingredients   # every key with an example line
 ```
 
 - `ah.id` is the AH webshop id. The pack size comes from AH (`salesUnitSize`); add `pack` to override it, e.g. wraps sold as "320 g" but used per stuk.
-- `lidl.id` is the lidl.nl product id; `pack` is required, because lidl.nl's product page doesn't give a machine-readable pack size.
+- Lidl has either `id` (lidl.nl product id, read live) or `receiptId` (boodschaapje.nl product id, read from the Checkjebon data). `pack` is required for Lidl: neither source gives a reliable pack size.
+  Find a `receiptId` by searching `lidl` → `d[].n` in the Checkjebon file, or at `https://boodschaapje.nl/api/search?q=feta` (which also lists pack sizes from Open Food Facts).
 - Prefer the store's own brand in a normal pack size. The `label` is what the app shows.
 
 ## How prices are fetched (spike findings, 2026-11-19)
@@ -94,14 +95,17 @@ Offers:
 - `kind: 'price'`: a straight cut (`DISCOUNT_FIXED_PRICE`, percentages, amount off), with `priceCents` = `currentPrice`, or the regular price minus the percentage when `currentPrice` is missing.
 - `kind: 'multibuy'`: `DISCOUNT_X_FOR_Y` (2 voor €5), `DISCOUNT_X_PLUS_Y_FREE` (1+1), `DISCOUNT_ONE_HALF_PRICE` (2e halve prijs) and anything else needing more than one item. No `priceCents`.
 
-### Lidl: partly works, no offers
+### Lidl: lidl.nl plus receipt prices, no offers
 
 lidl.nl isn't a grocery webshop. It lists part of the food range (fruit and veg, Vemondo, some fresh and frozen products) plus the weekly folder, but not staples like feta, tofu, kikkererwten, komkommer or eggs.
 
 - `https://www.lidl.nl/p/p<id>` (redirects to the full product URL) has a JSON-LD `Product` block with the regular shelf price (`offers[0].price`). Lidl Plus prices aren't in it. **This is what the script uses**, for the 25 mapped products found online.
 - `https://www.lidl.nl/q/api/search?assortment=NL&locale=nl_NL&version=2.1.0&q=<term>` works without auth (the `version=v2.0.0` variant gives 401) and is handy for finding ids. `xPayload.keywordResults.num_items_found` says how many of the `items` actually match. The rest are filler.
 - Offers are in the folder pages (`/c/aanbiedingen/a10008785`, as `data-grid-data` JSON with `regionsPrices`), but they're mostly non-recipe items, often Lidl Plus only, and they don't link up with the regular range. So **Lidl offers are skipped**.
-- Everything else comes from `lidl-manual.json`, which is kept by hand. The first version is estimates; see `mapping-review.md`.
+- **Receipt prices (55 items).** [Checkjebon](https://github.com/supermarkt/checkjebon) (MIT) publishes a daily `data/supermarkets.json` with prices for 12 Dutch supermarkets. Its Lidl part (about 22,000 products, receipt names like "Feta kaas") comes from [boodschaapje.nl](https://boodschaapje.nl), which reads Lidl receipts. The script downloads the file once per run (about 10 MB) and looks up each `receiptId`.
+  - **These prices are real, but not fresh.** The Lidl part stopped changing around August 2026: no Lidl price changed between 2026-09-01 and 2026-11-19, while about 2,800 changed between May and November. boodschaapje.nl's own API gives the same numbers, so the source itself has stopped. If it starts updating again, the daily run picks that up without any change here.
+  - There is no date per price, and some receipt lines have several ids with different prices (old and new). The mapping picks the plain own-brand line with a known pack size.
+- `lidl-manual.json` is the last resort, for ingredients no source has (now only zoete aardappel, an estimate).
 
 ### Failures
 

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-19T06:50:06.184Z",
+ "generatedAt": "2026-11-19T07:01:19.768Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -10,10 +10,10 @@
     "priceCents": 95
    },
    "lidl": {
-    "label": "Aardappelkroketjes (diepvries) 750 g",
-    "packSize": 750,
+    "label": "Aardappelkroketten (diepvries) 1 kg",
+    "packSize": 1000,
     "packUnit": "g",
-    "priceCents": 139
+    "priceCents": 144
    }
   },
   "aardappelschijfje": {
@@ -80,10 +80,10 @@
     "priceCents": 259
    },
    "lidl": {
-    "label": "Broccoli 500 g",
-    "packSize": 500,
+    "label": "Broccoliroosjes 400 g",
+    "packSize": 400,
     "packUnit": "g",
-    "priceCents": 149
+    "priceCents": 229
    }
   },
   "bulgur": {
@@ -92,6 +92,12 @@
     "packSize": 400,
     "packUnit": "g",
     "priceCents": 159
+   },
+   "lidl": {
+    "label": "Bio couscous-bulgur 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 179
    }
   },
   "cherrytomaat": {
@@ -144,10 +150,10 @@
     "priceCents": 179
    },
    "lidl": {
-    "label": "Milbona Crème fraîche 200 ml",
+    "label": "Crème fraîche 30% 200 g",
     "packSize": 200,
-    "packUnit": "ml",
-    "priceCents": 95
+    "packUnit": "g",
+    "priceCents": 98
    }
   },
   "diepvries edamame": {
@@ -156,6 +162,12 @@
     "packSize": 450,
     "packUnit": "g",
     "priceCents": 249
+   },
+   "lidl": {
+    "label": "Edamame sojabonen 400 g",
+    "packSize": 400,
+    "packUnit": "g",
+    "priceCents": 149
    }
   },
   "ei": {
@@ -166,10 +178,10 @@
     "priceCents": 199
    },
    "lidl": {
-    "label": "Scharreleieren M 10 stuks",
-    "packSize": 10,
+    "label": "Kipster scharreleieren 6 stuks",
+    "packSize": 6,
     "packUnit": "stuks",
-    "priceCents": 259
+    "priceCents": 189
    }
   },
   "falafelballetjes": {
@@ -180,10 +192,10 @@
     "priceCents": 148
    },
    "lidl": {
-    "label": "Vemondo Falafel 200 g",
+    "label": "Vegan falafel 200 g",
     "packSize": 200,
     "packUnit": "g",
-    "priceCents": 179
+    "priceCents": 148
    }
   },
   "feta": {
@@ -194,10 +206,10 @@
     "priceCents": 175
    },
    "lidl": {
-    "label": "Eridanous Griekse feta 200 g",
+    "label": "Feta 200 g",
     "packSize": 200,
     "packUnit": "g",
-    "priceCents": 179
+    "priceCents": 199
    }
   },
   "garam masala": {
@@ -216,10 +228,10 @@
     "priceCents": 64
    },
    "lidl": {
-    "label": "Baresa Gepelde tomaten 400 g",
+    "label": "Gepelde tomaten 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 55
+    "priceCents": 64
    }
   },
   "geraspte cheddar": {
@@ -236,10 +248,10 @@
     }
    },
    "lidl": {
-    "label": "Milbona Geraspte cheddar 200 g",
-    "packSize": 200,
+    "label": "Cheddar geraspt 150 g",
+    "packSize": 150,
     "packUnit": "g",
-    "priceCents": 199
+    "priceCents": 229
    }
   },
   "geraspte mozzarella": {
@@ -256,10 +268,10 @@
     }
    },
    "lidl": {
-    "label": "Milbona Geraspte mozzarella 200 g",
+    "label": "Mozzarella geraspt 200 g",
     "packSize": 200,
     "packUnit": "g",
-    "priceCents": 179
+    "priceCents": 249
    }
   },
   "geraspte oude kaas": {
@@ -270,10 +282,10 @@
     "priceCents": 429
    },
    "lidl": {
-    "label": "Milbona Geraspte oude kaas 175 g",
-    "packSize": 175,
+    "label": "Goudse kaas extra oud geraspt 200 g",
+    "packSize": 200,
     "packUnit": "g",
-    "priceCents": 249
+    "priceCents": 279
    }
   },
   "gnocchi": {
@@ -284,10 +296,10 @@
     "priceCents": 149
    },
    "lidl": {
-    "label": "Combino Gnocchi 500 g",
+    "label": "Gnocchi 500 g",
     "packSize": 500,
     "packUnit": "g",
-    "priceCents": 109
+    "priceCents": 169
    }
   },
   "gochujang": {
@@ -296,6 +308,12 @@
     "packSize": 250,
     "packUnit": "g",
     "priceCents": 279
+   },
+   "lidl": {
+    "label": "Gochujang saus",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 299
    }
   },
   "granaatappel": {
@@ -320,10 +338,10 @@
     "priceCents": 179
    },
    "lidl": {
-    "label": "Milbona Griekse stijl yoghurt 1 kg",
-    "packSize": 1000,
+    "label": "Griekse yoghurt 500 g",
+    "packSize": 500,
     "packUnit": "g",
-    "priceCents": 189
+    "priceCents": 179
    }
   },
   "groene pesto": {
@@ -334,10 +352,10 @@
     "priceCents": 113
    },
    "lidl": {
-    "label": "Baresa Pesto verde 190 g",
+    "label": "Pesto genovese 190 g",
     "packSize": 190,
     "packUnit": "g",
-    "priceCents": 129
+    "priceCents": 115
    }
   },
   "groentebouillon": {
@@ -348,10 +366,10 @@
     "priceCents": 54
    },
    "lidl": {
-    "label": "Kania Groentebouillon blokjes 100 g",
-    "packSize": 100,
+    "label": "Groentebouillonblokjes 120 g",
+    "packSize": 120,
     "packUnit": "g",
-    "priceCents": 69
+    "priceCents": 54
    }
   },
   "grote pitabroodje": {
@@ -360,6 +378,12 @@
     "packSize": 5,
     "packUnit": "stuks",
     "priceCents": 85
+   },
+   "lidl": {
+    "label": "Pitabroodjes XXL 800 g",
+    "packSize": 4,
+    "packUnit": "stuks",
+    "priceCents": 149
    }
   },
   "halloumi": {
@@ -370,10 +394,10 @@
     "priceCents": 269
    },
    "lidl": {
-    "label": "Eridanous Halloumi 200 g",
-    "packSize": 200,
+    "label": "Halloumi 225 g",
+    "packSize": 225,
     "packUnit": "g",
-    "priceCents": 229
+    "priceCents": 245
    }
   },
   "harissa": {
@@ -382,6 +406,12 @@
     "packSize": 190,
     "packUnit": "g",
     "priceCents": 399
+   },
+   "lidl": {
+    "label": "Harissa pasta 190 g",
+    "packSize": 190,
+    "packUnit": "g",
+    "priceCents": 149
    }
   },
   "hummus": {
@@ -392,10 +422,10 @@
     "priceCents": 128
    },
    "lidl": {
-    "label": "Chef Select Hummus naturel 200 g",
+    "label": "Hummus 200 g",
     "packSize": 200,
     "packUnit": "g",
-    "priceCents": 129
+    "priceCents": 128
    }
   },
   "ijsbergsla": {
@@ -420,10 +450,10 @@
     "priceCents": 89
    },
    "lidl": {
-    "label": "Freshona Kikkererwten 400 g",
+    "label": "Kikkererwten 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 65
+    "priceCents": 90
    }
   },
   "knoflook": {
@@ -448,10 +478,10 @@
     "priceCents": 114
    },
    "lidl": {
-    "label": "Kania Knoflooksaus 300 ml",
+    "label": "Knoflooksaus",
     "packSize": 300,
     "packUnit": "ml",
-    "priceCents": 109
+    "priceCents": 98
    }
   },
   "kokosmelk": {
@@ -462,10 +492,10 @@
     "priceCents": 127
    },
    "lidl": {
-    "label": "Vitasia Kokosmelk 400 ml",
+    "label": "Kokosmelk 400 ml",
     "packSize": 400,
     "packUnit": "ml",
-    "priceCents": 119
+    "priceCents": 199
    }
   },
   "komkommer": {
@@ -479,7 +509,7 @@
     "label": "Komkommer per stuk",
     "packSize": 1,
     "packUnit": "stuks",
-    "priceCents": 79
+    "priceCents": 75
    }
   },
   "koriander": {
@@ -488,6 +518,12 @@
     "packSize": 15,
     "packUnit": "g",
     "priceCents": 129
+   },
+   "lidl": {
+    "label": "Koriander",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 99
    }
   },
   "krieltje": {
@@ -540,10 +576,10 @@
     "priceCents": 96
    },
    "lidl": {
-    "label": "Freshona Linzen 400 g",
+    "label": "Linzen 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 79
+    "priceCents": 95
    }
   },
   "mais": {
@@ -554,10 +590,10 @@
     "priceCents": 119
    },
    "lidl": {
-    "label": "Freshona Maïs 340 g",
-    "packSize": 340,
+    "label": "Maïs 425 ml",
+    "packSize": 425,
     "packUnit": "g",
-    "priceCents": 79
+    "priceCents": 119
    }
   },
   "mango chutney": {
@@ -576,10 +612,10 @@
     "priceCents": 69
    },
    "lidl": {
-    "label": "Kania Mayonaise 500 ml",
-    "packSize": 500,
+    "label": "Mayonaise in tube 170 ml",
+    "packSize": 170,
     "packUnit": "ml",
-    "priceCents": 129
+    "priceCents": 79
    }
   },
   "mozzarella": {
@@ -590,10 +626,10 @@
     "priceCents": 85
    },
    "lidl": {
-    "label": "Milbona Mozzarella 125 g",
+    "label": "Mozzarella 125 g",
     "packSize": 125,
     "packUnit": "g",
-    "priceCents": 69
+    "priceCents": 88
    }
   },
   "naanbroden": {
@@ -602,6 +638,12 @@
     "packSize": 2,
     "packUnit": "stuks",
     "priceCents": 179
+   },
+   "lidl": {
+    "label": "Naanbrood 260 g (2 stuks)",
+    "packSize": 2,
+    "packUnit": "stuks",
+    "priceCents": 176
    }
   },
   "orzo": {
@@ -610,6 +652,12 @@
     "packSize": 500,
     "packUnit": "g",
     "priceCents": 189
+   },
+   "lidl": {
+    "label": "Orzo",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 149
    }
   },
   "ovenfriet": {
@@ -656,10 +704,10 @@
     "priceCents": 58
    },
    "lidl": {
-    "label": "Baresa Passata 500 g",
+    "label": "Gezeefde tomaten 500 g",
     "packSize": 500,
     "packUnit": "g",
-    "priceCents": 59
+    "priceCents": 71
    }
   },
   "peterselie": {
@@ -684,8 +732,8 @@
     "priceCents": 79
    },
    "lidl": {
-    "label": "Tastino Pitabroodjes 400 g",
-    "packSize": 6,
+    "label": "Tastino Pitabroodjes 400 g (5 stuks)",
+    "packSize": 5,
     "packUnit": "stuks",
     "priceCents": 85
    }
@@ -706,7 +754,7 @@
     "priceCents": 129
    },
    "lidl": {
-    "label": "Golden Sun Basmatirijst 1 kg",
+    "label": "Basmati rijst 1 kg",
     "packSize": 1000,
     "packUnit": "g",
     "priceCents": 179
@@ -720,10 +768,10 @@
     "priceCents": 199
    },
    "lidl": {
-    "label": "Golden Sun Rode linzen 500 g",
+    "label": "Rode linzen",
     "packSize": 500,
     "packUnit": "g",
-    "priceCents": 129
+    "priceCents": 149
    }
   },
   "rode ui": {
@@ -768,10 +816,10 @@
     }
    },
    "lidl": {
-    "label": "Roerbakgroente 400 g",
+    "label": "Hollandse roerbakgroente 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 149
+    "priceCents": 199
    }
   },
   "rucola": {
@@ -782,8 +830,8 @@
     "priceCents": 109
    },
    "lidl": {
-    "label": "Rucola 75 g",
-    "packSize": 75,
+    "label": "Rucola 85 g",
+    "packSize": 85,
     "packUnit": "g",
     "priceCents": 99
    }
@@ -796,10 +844,10 @@
     "priceCents": 99
    },
    "lidl": {
-    "label": "Vitasia Sambal oelek 200 g",
-    "packSize": 200,
+    "label": "Sambal oelek 560 g",
+    "packSize": 560,
     "packUnit": "g",
-    "priceCents": 89
+    "priceCents": 166
    }
   },
   "sesamzaad": {
@@ -832,10 +880,10 @@
     "priceCents": 45
    },
    "lidl": {
-    "label": "Golden Sun Snelkookrijst 1 kg",
-    "packSize": 1000,
+    "label": "Rijst 400 g",
+    "packSize": 400,
     "packUnit": "g",
-    "priceCents": 139
+    "priceCents": 45
    }
   },
   "spinazie": {
@@ -858,6 +906,12 @@
     "packSize": 290,
     "packUnit": "ml",
     "priceCents": 315
+   },
+   "lidl": {
+    "label": "Sriracha saus",
+    "packSize": 1,
+    "packUnit": "stuks",
+    "priceCents": 199
    }
   },
   "sushirijst": {
@@ -866,6 +920,12 @@
     "packSize": 500,
     "packUnit": "g",
     "priceCents": 249
+   },
+   "lidl": {
+    "label": "Sushi rijst 500 g",
+    "packSize": 500,
+    "packUnit": "g",
+    "priceCents": 149
    }
   },
   "tacokruiden": {
@@ -904,6 +964,12 @@
     "packSize": 180,
     "packUnit": "ml",
     "priceCents": 149
+   },
+   "lidl": {
+    "label": "Woksaus teriyaki 150 ml",
+    "packSize": 150,
+    "packUnit": "ml",
+    "priceCents": 199
    }
   },
   "tikka masala kruiden": {
@@ -922,10 +988,10 @@
     "priceCents": 121
    },
    "lidl": {
-    "label": "Vemondo Tofu naturel 400 g",
-    "packSize": 400,
+    "label": "Tofu 360 g",
+    "packSize": 360,
     "packUnit": "g",
-    "priceCents": 199
+    "priceCents": 130
    }
   },
   "tomaat": {
@@ -948,6 +1014,12 @@
     "packSize": 300,
     "packUnit": "g",
     "priceCents": 115
+   },
+   "lidl": {
+    "label": "Salsa dip 300 g",
+    "packSize": 300,
+    "packUnit": "g",
+    "priceCents": 121
    }
   },
   "tzatziki": {
@@ -958,10 +1030,10 @@
     "priceCents": 145
    },
    "lidl": {
-    "label": "Eridanous Tzatziki 200 g",
-    "packSize": 200,
+    "label": "Tzatziki 250 g",
+    "packSize": 250,
     "packUnit": "g",
-    "priceCents": 119
+    "priceCents": 99
    }
   },
   "ui": {
@@ -972,10 +1044,10 @@
     "priceCents": 89
    },
    "lidl": {
-    "label": "Uien 1 kg",
+    "label": "Uien geel 1 kg",
     "packSize": 1000,
     "packUnit": "g",
-    "priceCents": 79
+    "priceCents": 89
    }
   },
   "vastkokende aardappel": {
@@ -986,10 +1058,10 @@
     "priceCents": 129
    },
    "lidl": {
-    "label": "Aardappelen vastkokend 2 kg",
-    "packSize": 2000,
+    "label": "Aardappelen vastkokend 1 kg",
+    "packSize": 1000,
     "packUnit": "g",
-    "priceCents": 199
+    "priceCents": 89
    }
   },
   "vega kipstukjes": {
@@ -1026,6 +1098,12 @@
     "packSize": 175,
     "packUnit": "g",
     "priceCents": 369
+   },
+   "lidl": {
+    "label": "Vegan gyros met ui 300 g",
+    "packSize": 300,
+    "packUnit": "g",
+    "priceCents": 199
    }
   },
   "vegetarische shoarma": {
@@ -1048,6 +1126,12 @@
     "packSize": 15,
     "packUnit": "g",
     "priceCents": 129
+   },
+   "lidl": {
+    "label": "Munt 40 g",
+    "packSize": 40,
+    "packUnit": "g",
+    "priceCents": 99
    }
   },
   "witte boon": {
@@ -1058,10 +1142,10 @@
     "priceCents": 89
    },
    "lidl": {
-    "label": "Freshona Witte bonen 400 g",
-    "packSize": 400,
+    "label": "Witte bonen 540 g",
+    "packSize": 540,
     "packUnit": "g",
-    "priceCents": 59
+    "priceCents": 149
    }
   },
   "wortel": {
@@ -1086,10 +1170,10 @@
     "priceCents": 92
    },
    "lidl": {
-    "label": "Tastino Tortilla wraps 6 stuks",
-    "packSize": 6,
+    "label": "Tortilla wraps XXL 740 g (8 stuks)",
+    "packSize": 8,
     "packUnit": "stuks",
-    "priceCents": 99
+    "priceCents": 169
    }
   },
   "za'atar": {
@@ -1122,10 +1206,10 @@
     "priceCents": 119
    },
    "lidl": {
-    "label": "Milbona Zure room 125 g",
-    "packSize": 125,
+    "label": "Biologische zure room 200 g",
+    "packSize": 200,
     "packUnit": "g",
-    "priceCents": 89
+    "priceCents": 94
    }
   },
   "zwarte boon": {
@@ -1136,10 +1220,10 @@
     "priceCents": 90
    },
    "lidl": {
-    "label": "Freshona Zwarte bonen 400 g",
+    "label": "Zwarte bonen (blik)",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 69
+    "priceCents": 90
    }
   }
  }

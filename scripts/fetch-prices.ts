@@ -5,8 +5,9 @@
  *
  * - AH: unofficial mobile API (anonymous token), all products in a few batch calls.
  *   National Bonus offers are included; online-only, volume and personal offers are not.
- * - Lidl: the product page on lidl.nl for mapped ids (regular price from its JSON-LD),
- *   otherwise the hand-kept lidl-manual.json. No Lidl offers.
+ * - Lidl: the product page on lidl.nl for mapped `id`s (regular price from its JSON-LD), else the
+ *   receipt price for `receiptId` from the Checkjebon data set, else the hand-kept lidl-manual.json.
+ *   No Lidl offers.
  * - A product that fails keeps its previous entry with `stale: true`.
  *
  * The output shape is read by the Boodschappenlijstje app (src/lib/prices.ts); do not change it.
@@ -40,7 +41,12 @@ type PriceData = {
 
 type Pack = { size: number; unit: PackUnit };
 type MappedProduct = { id: number; label: string; pack?: Pack };
-type Mapping = Record<string, { ah?: MappedProduct; lidl?: MappedProduct }>;
+/** Lidl: `id` = lidl.nl product id (live page), `receiptId` = boodschaapje.nl id in the Checkjebon data. */
+type MappedLidl = { id?: number; receiptId?: string; label: string; pack: Pack };
+type Mapping = Record<string, { ah?: MappedProduct; lidl?: MappedLidl }>;
+
+/** Daily Dutch supermarket prices (MIT); its Lidl part comes from receipts via boodschaapje.nl. */
+const CHECKJEBON_URL = 'https://raw.githubusercontent.com/supermarkt/checkjebon/main/data/supermarkets.json';
 type ManualProduct = Omit<Product, 'stale' | 'offer'> & { checked: string | null };
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -242,6 +248,17 @@ async function lidlPrice(id: number): Promise<number> {
   throw new Error('no price on page');
 }
 
+/** Lidl prices from Checkjebon, by boodschaapje.nl product id. */
+async function checkjebonLidl(): Promise<Map<string, number>> {
+  const res = await fetchRetry(CHECKJEBON_URL, { headers: { Accept: 'application/json' } });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const stores = (await res.json()) as { n: string; d: { l: string; p: number }[] }[];
+  const lidl = stores.find((s) => s.n === 'lidl');
+  if (!lidl) throw new Error('no Lidl in Checkjebon data');
+  // Prices of a few cents are placeholders (bags, deposits), not products.
+  return new Map(lidl.d.filter((p) => p.p >= 0.1).map((p) => [String(p.l), p.p]));
+}
+
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
   const results: R[] = new Array(items.length);
   let next = 0;
@@ -279,7 +296,7 @@ async function main() {
   }
 
   // Lidl (live pages)
-  const lidlIds = [...new Set(keys.flatMap((k) => (mapping[k].lidl ? [mapping[k].lidl!.id] : [])))];
+  const lidlIds = [...new Set(keys.flatMap((k) => (mapping[k].lidl?.id ? [mapping[k].lidl!.id!] : [])))];
   const lidlFound = new Map<number, number>();
   await mapLimit(lidlIds, 4, async (id) => {
     try {
@@ -289,8 +306,18 @@ async function main() {
     }
   });
 
+  // Lidl (receipt prices)
+  let receipts = new Map<string, number>();
+  if (keys.some((k) => mapping[k].lidl?.receiptId)) {
+    try {
+      receipts = await checkjebonLidl();
+    } catch (error) {
+      console.warn('Checkjebon failed:', error instanceof Error ? error.message : error);
+    }
+  }
+
   const products: PriceData['products'] = {};
-  const counts = { ahFresh: 0, ahStale: 0, ahMissing: 0, lidlLive: 0, lidlManual: 0, lidlStale: 0, ahOffers: 0 };
+  const counts = { ahFresh: 0, ahStale: 0, ahMissing: 0, lidlLive: 0, lidlReceipt: 0, lidlManual: 0, lidlStale: 0, ahOffers: 0 };
 
   for (const key of keys) {
     const entry: Partial<Record<Store, Product>> = {};
@@ -315,12 +342,15 @@ async function main() {
     }
 
     const lidl = mapping[key].lidl;
-    const price = lidl ? lidlFound.get(lidl.id) : undefined;
-    if (lidl && lidl.pack && price) {
+    const livePrice = lidl?.id ? lidlFound.get(lidl.id) : undefined;
+    const receiptPrice = lidl?.receiptId ? receipts.get(lidl.receiptId) : undefined;
+    const price = livePrice ?? receiptPrice;
+    if (lidl && price) {
       entry.lidl = { label: lidl.label, packSize: lidl.pack.size, packUnit: lidl.pack.unit, priceCents: cents(price) };
-      counts.lidlLive++;
+      if (livePrice) counts.lidlLive++;
+      else counts.lidlReceipt++;
     } else if (lidl && prev?.lidl && prev.lidl.label === lidl.label) {
-      // The live page failed: keep the last live price rather than fall back to an estimate.
+      // Fetching failed: keep the last price rather than fall back to an estimate.
       entry.lidl = stale(prev.lidl);
       counts.lidlStale++;
     } else if (manual[key]) {
@@ -334,7 +364,7 @@ async function main() {
 
   console.log(
     `AH: ${counts.ahFresh} fresh (${counts.ahOffers} with an offer), ${counts.ahStale} stale, ${counts.ahMissing} missing. ` +
-      `Lidl: ${counts.lidlLive} live, ${counts.lidlManual} manual, ${counts.lidlStale} stale.`,
+      `Lidl: ${counts.lidlLive} live, ${counts.lidlReceipt} from receipts, ${counts.lidlManual} manual, ${counts.lidlStale} stale.`,
   );
 
   if (counts.ahFresh === 0 && counts.lidlLive === 0) {

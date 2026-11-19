@@ -2,31 +2,52 @@
 
 Matches in `mapping.json` and `lidl-manual.json` that need a human check. Everything not listed here is a plain store-brand match in a normal pack size.
 
-Fix a match by changing the id/label in `mapping.json` (AH ids come from the `webshopId` in the AH app or the number in an ah.nl product URL, `/producten/product/wi<ID>/…`; Lidl ids are the number after `/p` in a lidl.nl product URL). Then run `npm run fetch`.
+Fix a match by changing the id/label in `mapping.json`, then run `npm run fetch`.
+- AH ids are the `webshopId` in the AH app, or the number in an ah.nl product URL (`/producten/product/wi<ID>/…`).
+- Lidl `id` is the number after `/p` in a lidl.nl product URL.
+- Lidl `receiptId` is a boodschaapje.nl product id (search `https://boodschaapje.nl/api/search?q=…`).
 
-## 1. Lidl manual prices are estimates (most important)
+## 1. Lidl receipt prices are about 3 months old
 
-lidl.nl lists only part of the food range online, so 42 Lidl prices come from `lidl-manual.json`. **They are my estimates, not prices I saw.** Each has `"checked": null`. Please check them in a store or the Lidl app and set `checked` to the date:
+55 Lidl prices come from receipt data (Checkjebon / boodschaapje.nl). They are real Lidl prices, but that source stopped updating around August 2026 (see README). Lidl prices move slowly, so they should be close. If something looks off in a store, either:
+- set a better `receiptId` in `mapping.json`, or
+- remove the Lidl entry and add the price to `lidl-manual.json`.
 
-aardappelkroketjes, broccoli, courgette, creme fraiche, ei, falafelballetjes, feta, gepelde tomaat, geraspte cheddar, geraspte mozzarella, geraspte oude kaas, gnocchi, granaatappel, griekse yoghurt, groene pesto, groentebouillon, halloumi, hummus, kikkererwt, knoflooksaus, kokosmelk, komkommer, linze, mais, mayonaise, mozzarella, passata, rijst, rode linze, roerbakgroenten, rucola, sambal, snelkookrijst, tofu, tzatziki, ui, vastkokende aardappel, witte boon, wrap, zoete aardappel, zure room, zwarte boon
+Receipt matches with a guessed pack size or product:
 
-The product names (Milbona, Freshona, Golden Sun, Baresa, Kania, Vemondo, Vitasia…) and pack sizes are also guesses at the usual Lidl own-brand product.
+| Ingredient | Lidl receipt line | Question |
+| --- | --- | --- |
+| ei | Kipster scharreleieren €1,89 (6605422) | Assumed 6 eggs. |
+| knoflooksaus | Knoflooksaus €0,98 (6606800) | Size unknown; assumed 300 ml. |
+| rode linze | Rode linzen €1,49 (6614328) | Size unknown; assumed 500 g. |
+| orzo | Orzo €1,49 (6612193) | Size unknown; assumed 500 g. |
+| wrap | Tortilla wraps XXL 740 g (42917) | Assumed 8 wraps. |
+| grote pitabroodje | Pitabroodjes XXL 800 g (6602046) | Assumed 4 per pack. |
+| naanbroden | Naanbrood 260 g (5200375) | Assumed 2 per pack. |
+| zwarte boon | Zwarte bonen €0,90 (178285) | Listed as 240 g (drained weight); treated as a 400 g can. |
+| broccoli | Broccoliroosjes 400 g (6604598) | No whole broccoli in the data. |
+| bulgur | Bio couscous-bulgur 500 g (126325) | A couscous/bulgur mix. |
+| gochujang | Gochujang saus (8127763) | A sauce, not the paste. |
+| sriracha, koriander | €1,99 sauce, €0,99 bunch | Counted as one pack/bunch. |
 
-## 2. No Lidl price at all (23)
+## 2. Lidl estimate left: zoete aardappel
 
-Not on lidl.nl and either not in the regular Lidl range or not something I could estimate. Add an entry to `lidl-manual.json` if Lidl has it:
+Only fresh sweet potato has no source. `lidl-manual.json` has an estimate of €2,29/kg (`"checked": null`). Please check it.
 
-bulgur, diepvries edamame, garam masala, gochujang, grote pitabroodje, harissa, koriander, mango chutney, naanbroden, orzo, paneer, ras el hanout, sesamzaad, sriracha, sushirijst, tacokruiden, tandoori kruiden, teriyakisaus, tikka masala kruiden, tomatensalsa, vegetarische gyros, verse munt, za'atar
+## 3. No Lidl price at all (9)
 
-Note: the app only names a cheaper store when both stores have the same number of items priced, so every missing Lidl item hides the comparison for recipes that use it.
+garam masala, mango chutney, paneer, ras el hanout, sesamzaad, tacokruiden, tandoori kruiden, tikka masala kruiden, za'atar
 
-## 3. Live Lidl matches to check
+None of these is in the receipt data or on lidl.nl as a plain product. Add an entry to `lidl-manual.json` if Lidl has it.
+
+Note: the app only names a cheaper store when both stores have the same number of items priced, so recipes that use these won't show a comparison.
+
+## 4. Live lidl.nl matches to check
 
 | Ingredient | Lidl product | Question |
 | --- | --- | --- |
 | cherrytomaat | Rode snacktomaten 500 g (11029802) | No cherry tomatoes on lidl.nl; snack tomatoes are the closest. |
 | paprika | Paprikamix 500 g (11151119) | Counted as 3 paprika's per pack. |
-| pitabroodje | Tastino Pitabroodjes 400 g (11317685) | Counted as 6 broodjes per pack; how many are in it? |
 | lente-ui | Lente ui per bosje (11151058) | Counted as 6 uitjes per bosje. |
 | basilicum, peterselie | Bio … in pot | Only potted herbs online; cut herbs may be cheaper. |
 | citroen | Bio citroen per stuk (11214544) | The regular net of lemons has no price online. |
@@ -36,7 +57,7 @@ Note: the app only names a cheaper store when both stores have the same number o
 | tempeh | Vemondo Plantaardige tempehblokjes 180 g (11561840) | Possibly marinated rather than plain tempeh. |
 | vegetarische balletjes | Vemondo Vega balletjes 384 g (11560292) | |
 
-## 4. AH matches to check
+## 5. AH matches to check
 
 | Ingredient | AH product | Question |
 | --- | --- | --- |

@@ -3,6 +3,14 @@
     "ah": {
       "id": 772,
       "label": "AH Aardappelkroketjes 600 g"
+    },
+    "lidl": {
+      "receiptId": "176876",
+      "label": "Aardappelkroketten (diepvries) 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
     }
   },
   "aardappelschijfje": {
@@ -65,12 +73,28 @@
     "ah": {
       "id": 395954,
       "label": "AH Broccoli 400 g"
+    },
+    "lidl": {
+      "receiptId": "6604598",
+      "label": "Broccoliroosjes 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "bulgur": {
     "ah": {
       "id": 525390,
       "label": "AH Biologisch Volkoren bulgur 400 g"
+    },
+    "lidl": {
+      "receiptId": "126325",
+      "label": "Bio couscous-bulgur 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "cherrytomaat": {
@@ -105,36 +129,84 @@
     "ah": {
       "id": 4164,
       "label": "AH Courgette per stuk"
+    },
+    "lidl": {
+      "receiptId": "82346",
+      "label": "Courgette per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
     }
   },
   "creme fraiche": {
     "ah": {
       "id": 46745,
       "label": "AH Crème fraîche 30% vet 200 g"
+    },
+    "lidl": {
+      "receiptId": "24628",
+      "label": "Crème fraîche 30% 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "diepvries edamame": {
     "ah": {
       "id": 514806,
       "label": "AH Terra Gepelde edamame boontjes 450 g"
+    },
+    "lidl": {
+      "receiptId": "134827",
+      "label": "Edamame sojabonen 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "ei": {
     "ah": {
       "id": 442922,
       "label": "AH Witte vrije-uitloopeieren M 6 stuks"
+    },
+    "lidl": {
+      "receiptId": "6605422",
+      "label": "Kipster scharreleieren 6 stuks",
+      "pack": {
+        "size": 6,
+        "unit": "stuks"
+      }
     }
   },
   "falafelballetjes": {
     "ah": {
       "id": 564793,
       "label": "AH Terra Biologische falafel 200 g"
+    },
+    "lidl": {
+      "receiptId": "6600925",
+      "label": "Vegan falafel 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "feta": {
     "ah": {
       "id": 462469,
       "label": "AH Griekse feta 200 g"
+    },
+    "lidl": {
+      "receiptId": "48087",
+      "label": "Feta 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "garam masala": {
@@ -147,84 +219,196 @@
     "ah": {
       "id": 803,
       "label": "AH Tomaten gepeld 400 g"
+    },
+    "lidl": {
+      "receiptId": "1404",
+      "label": "Gepelde tomaten 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "geraspte cheddar": {
     "ah": {
       "id": 454161,
       "label": "AH Cheddar geraspt 150 g"
+    },
+    "lidl": {
+      "receiptId": "5217008",
+      "label": "Cheddar geraspt 150 g",
+      "pack": {
+        "size": 150,
+        "unit": "g"
+      }
     }
   },
   "geraspte mozzarella": {
     "ah": {
       "id": 232017,
       "label": "AH Mozzarella geraspt 150 g"
+    },
+    "lidl": {
+      "receiptId": "39060",
+      "label": "Mozzarella geraspt 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "geraspte oude kaas": {
     "ah": {
       "id": 3853,
       "label": "AH Goudse oud 48+ geraspt 175 g"
+    },
+    "lidl": {
+      "receiptId": "1106",
+      "label": "Goudse kaas extra oud geraspt 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "gnocchi": {
     "ah": {
       "id": 210482,
       "label": "AH Gnocchi 500 g"
+    },
+    "lidl": {
+      "receiptId": "7702833",
+      "label": "Gnocchi 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "gochujang": {
     "ah": {
       "id": 518431,
       "label": "Sempio Gochujang 250 g"
+    },
+    "lidl": {
+      "receiptId": "8127763",
+      "label": "Gochujang saus",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
     }
   },
   "granaatappel": {
     "ah": {
       "id": 108021,
       "label": "AH Granaatappel per stuk"
+    },
+    "lidl": {
+      "receiptId": "80646",
+      "label": "Granaatappel per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
     }
   },
   "griekse yoghurt": {
     "ah": {
       "id": 177509,
       "label": "AH Yoghurt Griekse stijl 5% 500 g"
+    },
+    "lidl": {
+      "receiptId": "171973",
+      "label": "Griekse yoghurt 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "groene pesto": {
     "ah": {
       "id": 170655,
       "label": "AH Groene pesto 190 g"
+    },
+    "lidl": {
+      "receiptId": "10098",
+      "label": "Pesto genovese 190 g",
+      "pack": {
+        "size": 190,
+        "unit": "g"
+      }
     }
   },
   "groentebouillon": {
     "ah": {
       "id": 492034,
       "label": "AH Bouillon groente (tabletten) 120 g"
+    },
+    "lidl": {
+      "receiptId": "194022",
+      "label": "Groentebouillonblokjes 120 g",
+      "pack": {
+        "size": 120,
+        "unit": "g"
+      }
     }
   },
   "grote pitabroodje": {
     "ah": {
       "id": 221857,
       "label": "AH Witte pita’s 5 stuks"
+    },
+    "lidl": {
+      "receiptId": "6602046",
+      "label": "Pitabroodjes XXL 800 g",
+      "pack": {
+        "size": 4,
+        "unit": "stuks"
+      }
     }
   },
   "halloumi": {
     "ah": {
       "id": 613287,
       "label": "AH Halloumi 225 g"
+    },
+    "lidl": {
+      "receiptId": "6300407",
+      "label": "Halloumi 225 g",
+      "pack": {
+        "size": 225,
+        "unit": "g"
+      }
     }
   },
   "harissa": {
     "ah": {
       "id": 450246,
       "label": "Souq Milde harissa 190 g"
+    },
+    "lidl": {
+      "receiptId": "195430",
+      "label": "Harissa pasta 190 g",
+      "pack": {
+        "size": 190,
+        "unit": "g"
+      }
     }
   },
   "hummus": {
     "ah": {
       "id": 438961,
       "label": "AH Terra Hummus naturel 200 g"
+    },
+    "lidl": {
+      "receiptId": "3573",
+      "label": "Hummus 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "ijsbergsla": {
@@ -245,6 +429,14 @@
     "ah": {
       "id": 167873,
       "label": "AH Terra Kikkererwten 400 g"
+    },
+    "lidl": {
+      "receiptId": "92959",
+      "label": "Kikkererwten 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "knoflook": {
@@ -265,24 +457,56 @@
     "ah": {
       "id": 467793,
       "label": "AH Knoflooksaus 300 ml"
+    },
+    "lidl": {
+      "receiptId": "6606800",
+      "label": "Knoflooksaus",
+      "pack": {
+        "size": 300,
+        "unit": "ml"
+      }
     }
   },
   "kokosmelk": {
     "ah": {
       "id": 161932,
       "label": "AH Kokosmelk 200 ml"
+    },
+    "lidl": {
+      "receiptId": "6611821",
+      "label": "Kokosmelk 400 ml",
+      "pack": {
+        "size": 400,
+        "unit": "ml"
+      }
     }
   },
   "komkommer": {
     "ah": {
       "id": 54074,
       "label": "AH Komkommer per stuk"
+    },
+    "lidl": {
+      "receiptId": "82231",
+      "label": "Komkommer per stuk",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
     }
   },
   "koriander": {
     "ah": {
       "id": 238968,
       "label": "AH Koriander 15 g"
+    },
+    "lidl": {
+      "receiptId": "83086",
+      "label": "Koriander",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
     }
   },
   "krieltje": {
@@ -335,12 +559,28 @@
     "ah": {
       "id": 167872,
       "label": "AH Terra Linzen 400 g"
+    },
+    "lidl": {
+      "receiptId": "178921",
+      "label": "Linzen 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "mais": {
     "ah": {
       "id": 800,
       "label": "AH Maiskorrels 340 g"
+    },
+    "lidl": {
+      "receiptId": "28260",
+      "label": "Maïs 425 ml",
+      "pack": {
+        "size": 425,
+        "unit": "g"
+      }
     }
   },
   "mango chutney": {
@@ -353,12 +593,28 @@
     "ah": {
       "id": 425942,
       "label": "AH Mayonaise zacht en romig 170 ml"
+    },
+    "lidl": {
+      "receiptId": "6602943",
+      "label": "Mayonaise in tube 170 ml",
+      "pack": {
+        "size": 170,
+        "unit": "ml"
+      }
     }
   },
   "mozzarella": {
     "ah": {
       "id": 506235,
       "label": "AH Mozzarella"
+    },
+    "lidl": {
+      "receiptId": "19051",
+      "label": "Mozzarella 125 g",
+      "pack": {
+        "size": 125,
+        "unit": "g"
+      }
     }
   },
   "naanbroden": {
@@ -369,12 +625,28 @@
         "size": 2,
         "unit": "stuks"
       }
+    },
+    "lidl": {
+      "receiptId": "5200375",
+      "label": "Naanbrood 260 g (2 stuks)",
+      "pack": {
+        "size": 2,
+        "unit": "stuks"
+      }
     }
   },
   "orzo": {
     "ah": {
       "id": 543585,
       "label": "AH Biologisch Orzo 500 g"
+    },
+    "lidl": {
+      "receiptId": "6612193",
+      "label": "Orzo",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "ovenfriet": {
@@ -415,6 +687,14 @@
     "ah": {
       "id": 481844,
       "label": "AH Tomaten passata 500 g"
+    },
+    "lidl": {
+      "receiptId": "517",
+      "label": "Gezeefde tomaten 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "peterselie": {
@@ -438,9 +718,9 @@
     },
     "lidl": {
       "id": 11317685,
-      "label": "Tastino Pitabroodjes 400 g",
+      "label": "Tastino Pitabroodjes 400 g (5 stuks)",
       "pack": {
-        "size": 6,
+        "size": 5,
         "unit": "stuks"
       }
     }
@@ -455,12 +735,28 @@
     "ah": {
       "id": 80148,
       "label": "AH Basmatirijst 400 g"
+    },
+    "lidl": {
+      "receiptId": "136419",
+      "label": "Basmati rijst 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
     }
   },
   "rode linze": {
     "ah": {
       "id": 469879,
       "label": "AH Terra Biologisch rode linzen 500 g"
+    },
+    "lidl": {
+      "receiptId": "6614328",
+      "label": "Rode linzen",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "rode ui": {
@@ -495,18 +791,42 @@
     "ah": {
       "id": 41080,
       "label": "AH Roerbakgroente Italiaans 400 g"
+    },
+    "lidl": {
+      "receiptId": "6603312",
+      "label": "Hollandse roerbakgroente 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "rucola": {
     "ah": {
       "id": 111767,
       "label": "AH Rucola 85 g"
+    },
+    "lidl": {
+      "receiptId": "6606103",
+      "label": "Rucola 85 g",
+      "pack": {
+        "size": 85,
+        "unit": "g"
+      }
     }
   },
   "sambal": {
     "ah": {
       "id": 450146,
       "label": "AH Sambal oelek 200 g"
+    },
+    "lidl": {
+      "receiptId": "6607295",
+      "label": "Sambal oelek 560 g",
+      "pack": {
+        "size": 560,
+        "unit": "g"
+      }
     }
   },
   "sesamzaad": {
@@ -533,6 +853,14 @@
     "ah": {
       "id": 948,
       "label": "AH Witte snelkookrijst 400 g"
+    },
+    "lidl": {
+      "receiptId": "229756",
+      "label": "Rijst 400 g",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   },
   "spinazie": {
@@ -553,12 +881,28 @@
     "ah": {
       "id": 505270,
       "label": "Go-Tan Sriracha 290 ml"
+    },
+    "lidl": {
+      "receiptId": "8127985",
+      "label": "Sriracha saus",
+      "pack": {
+        "size": 1,
+        "unit": "stuks"
+      }
     }
   },
   "sushirijst": {
     "ah": {
       "id": 583715,
       "label": "AH Sushi rijst 500 g"
+    },
+    "lidl": {
+      "receiptId": "92775",
+      "label": "Sushi rijst 500 g",
+      "pack": {
+        "size": 500,
+        "unit": "g"
+      }
     }
   },
   "tacokruiden": {
@@ -591,6 +935,14 @@
     "ah": {
       "id": 482500,
       "label": "AH Woksaus teriyaki 180 ml"
+    },
+    "lidl": {
+      "receiptId": "6612263",
+      "label": "Woksaus teriyaki 150 ml",
+      "pack": {
+        "size": 150,
+        "unit": "ml"
+      }
     }
   },
   "tikka masala kruiden": {
@@ -603,6 +955,14 @@
     "ah": {
       "id": 564897,
       "label": "AH Terra Biologische tofu 325 g"
+    },
+    "lidl": {
+      "receiptId": "7509034",
+      "label": "Tofu 360 g",
+      "pack": {
+        "size": 360,
+        "unit": "g"
+      }
     }
   },
   "tomaat": {
@@ -623,24 +983,56 @@
     "ah": {
       "id": 31473,
       "label": "AH Salsa mild 300 g"
+    },
+    "lidl": {
+      "receiptId": "11890",
+      "label": "Salsa dip 300 g",
+      "pack": {
+        "size": 300,
+        "unit": "g"
+      }
     }
   },
   "tzatziki": {
     "ah": {
       "id": 494566,
       "label": "AH Tzatziki 150 g"
+    },
+    "lidl": {
+      "receiptId": "58153",
+      "label": "Tzatziki 250 g",
+      "pack": {
+        "size": 250,
+        "unit": "g"
+      }
     }
   },
   "ui": {
     "ah": {
       "id": 525847,
       "label": "AH Gele uien 3 stuks"
+    },
+    "lidl": {
+      "receiptId": "8128985",
+      "label": "Uien geel 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
     }
   },
   "vastkokende aardappel": {
     "ah": {
       "id": 123866,
       "label": "AH Vastkokende aardappelen 1 kg"
+    },
+    "lidl": {
+      "receiptId": "83222",
+      "label": "Aardappelen vastkokend 1 kg",
+      "pack": {
+        "size": 1000,
+        "unit": "g"
+      }
     }
   },
   "vega kipstukjes": {
@@ -675,6 +1067,14 @@
     "ah": {
       "id": 460410,
       "label": "Vivera Plantaardige gyros 175 g"
+    },
+    "lidl": {
+      "receiptId": "163481",
+      "label": "Vegan gyros met ui 300 g",
+      "pack": {
+        "size": 300,
+        "unit": "g"
+      }
     }
   },
   "vegetarische shoarma": {
@@ -695,12 +1095,28 @@
     "ah": {
       "id": 238969,
       "label": "AH Munt 15 g"
+    },
+    "lidl": {
+      "receiptId": "83073",
+      "label": "Munt 40 g",
+      "pack": {
+        "size": 40,
+        "unit": "g"
+      }
     }
   },
   "witte boon": {
     "ah": {
       "id": 585656,
       "label": "AH Terra Witte bonen 400 g"
+    },
+    "lidl": {
+      "receiptId": "5901206",
+      "label": "Witte bonen 540 g",
+      "pack": {
+        "size": 540,
+        "unit": "g"
+      }
     }
   },
   "wortel": {
@@ -725,6 +1141,14 @@
         "size": 8,
         "unit": "stuks"
       }
+    },
+    "lidl": {
+      "receiptId": "42917",
+      "label": "Tortilla wraps XXL 740 g (8 stuks)",
+      "pack": {
+        "size": 8,
+        "unit": "stuks"
+      }
     }
   },
   "za'atar": {
@@ -743,12 +1167,28 @@
     "ah": {
       "id": 3869,
       "label": "AH Sour cream 125 g"
+    },
+    "lidl": {
+      "receiptId": "118620",
+      "label": "Biologische zure room 200 g",
+      "pack": {
+        "size": 200,
+        "unit": "g"
+      }
     }
   },
   "zwarte boon": {
     "ah": {
       "id": 188265,
       "label": "AH Terra Zwarte bonen 400 g"
+    },
+    "lidl": {
+      "receiptId": "178285",
+      "label": "Zwarte bonen (blik)",
+      "pack": {
+        "size": 400,
+        "unit": "g"
+      }
     }
   }
 }
