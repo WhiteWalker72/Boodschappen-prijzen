@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-19T07:01:19.768Z",
+ "generatedAt": "2026-11-20T14:02:02.010Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -1097,7 +1097,13 @@
     "label": "Vivera Plantaardige gyros 175 g",
     "packSize": 175,
     "packUnit": "g",
-    "priceCents": 369
+    "priceCents": 369,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 + 1 gratis",
+     "validFrom": "2026-11-23",
+     "validUntil": "2026-11-29"
+    }
    },
    "lidl": {
     "label": "Vegan gyros met ui 300 g",
