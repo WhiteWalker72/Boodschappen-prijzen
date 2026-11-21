@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-20T14:02:02.010Z",
+ "generatedAt": "2026-11-21T13:28:51.039Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -125,7 +125,7 @@
     "label": "Bio citroen per stuk",
     "packSize": 1,
     "packUnit": "stuks",
-    "priceCents": 65
+    "priceCents": 69
    }
   },
   "courgette": {
