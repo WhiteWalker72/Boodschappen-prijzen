@@ -7,7 +7,9 @@
  *   National Bonus offers are included; online-only, volume and personal offers are not.
  * - Lidl: the product page on lidl.nl for mapped `id`s (regular price from its JSON-LD), else the
  *   receipt price for `receiptId` from the Checkjebon data set, else the hand-kept lidl-manual.json.
- *   No Lidl offers.
+ *   Offers (Lidl Plus prices and temporary action prices) come from the product page data for mapped
+ *   `id`s, and from the weekly offers page for products it lists by id or by exact name.
+ *   Personal Lidl Plus coupons are not public and are left out.
  * - A product that fails keeps its previous entry with `stale: true`.
  *
  * The output shape is read by the Boodschappenlijstje app (src/lib/prices.ts); do not change it.
@@ -226,26 +228,217 @@ function ahToProduct(p: AhProduct, mapped: MappedProduct, today: string): Produc
 
 // ---------------------------------------------------------------- Lidl
 
-/** Regular shelf price from the JSON-LD on a lidl.nl product page (Lidl Plus prices are not in it). */
-async function lidlPrice(id: number): Promise<number> {
-  const res = await fetchRetry(`https://www.lidl.nl/p/p${id}`, {
-    headers: { 'User-Agent': BROWSER_UA, 'Accept-Language': 'nl-NL,nl;q=0.9' },
-    redirect: 'follow',
-  });
+const LIDL_HEADERS = { 'User-Agent': BROWSER_UA, 'Accept-Language': 'nl-NL,nl;q=0.9' };
+const LIDL_OFFERS_URL = 'https://www.lidl.nl/c/aanbiedingen/a10008785';
+
+/** A Lidl price block as it appears in the page data (`regionsPrices["1"]`). */
+type LidlPriceBlock = {
+  price?: number;
+  startDate?: string;
+  endDate?: string;
+  discount?: { deletedPrice?: number | null; discountText?: string | null } | null;
+  packaging?: { text?: string } | null;
+};
+type LidlRegionPrices = {
+  currentPrice?: LidlPriceBlock | null;
+  currentLidlPlusPrice?: { price?: LidlPriceBlock | null; highlightText?: string | null } | null;
+};
+export type LidlOfferInfo = { productId: number; title: string; packaging: string | null; prices: LidlRegionPrices };
+
+/**
+ * Resolves Nuxt's serialised page data (`__NUXT_DATA__`): a flat array where
+ * objects and arrays hold indices into that array.
+ */
+export function resolveNuxtData(flat: unknown[]): unknown {
+  const seen = new Map<number, unknown>();
+  const resolve = (index: number): unknown => {
+    if (index < 0) return undefined;
+    if (seen.has(index)) return seen.get(index);
+    const value = flat[index];
+    if (Array.isArray(value)) {
+      // ["Reactive", i], ["ShallowReactive", i], ["Ref", i], … wrap a single value.
+      if (typeof value[0] === 'string' && value.length === 2 && typeof value[1] === 'number') {
+        const inner = resolve(value[1]);
+        seen.set(index, inner);
+        return inner;
+      }
+      const out: unknown[] = [];
+      seen.set(index, out);
+      for (const i of value) out.push(typeof i === 'number' ? resolve(i) : i);
+      return out;
+    }
+    if (value && typeof value === 'object') {
+      const out: Record<string, unknown> = {};
+      seen.set(index, out);
+      for (const [k, i] of Object.entries(value)) out[k] = typeof i === 'number' ? resolve(i) : i;
+      return out;
+    }
+    seen.set(index, value);
+    return value;
+  };
+  return resolve(0);
+}
+
+/** Finds the first object with a `regionsPrices` map (the product) anywhere in the page data. */
+function findProduct(node: unknown, depth = 0): Record<string, unknown> | null {
+  if (!node || typeof node !== 'object' || depth > 40) return null;
+  if (!Array.isArray(node) && 'regionsPrices' in node && 'productId' in node) return node as Record<string, unknown>;
+  for (const child of Object.values(node)) {
+    const found = findProduct(child, depth + 1);
+    if (found) return found;
+  }
+  return null;
+}
+
+function toOfferInfo(product: Record<string, unknown>): LidlOfferInfo | null {
+  const regions = product.regionsPrices as Record<string, LidlRegionPrices> | undefined;
+  const prices = regions?.['1'] ?? (regions ? Object.values(regions)[0] : undefined);
+  const productId = Number(product.productId);
+  if (!prices || !productId) return null;
+  const price = product.price as { packaging?: { text?: string } } | undefined;
+  return {
+    productId,
+    title: String(product.title ?? product.fullTitle ?? ''),
+    packaging: prices.currentPrice?.packaging?.text ?? price?.packaging?.text ?? null,
+    prices,
+  };
+}
+
+/** Regular shelf price (JSON-LD) and the page's price data from a lidl.nl product page. */
+async function lidlPage(id: number): Promise<{ price: number; info: LidlOfferInfo | null }> {
+  const res = await fetchRetry(`https://www.lidl.nl/p/p${id}`, { headers: LIDL_HEADERS, redirect: 'follow' });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const html = await res.text();
+
+  let info: LidlOfferInfo | null = null;
+  const nuxt = html.match(/<script[^>]*id="__NUXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+  if (nuxt) {
+    try {
+      const product = findProduct(resolveNuxtData(JSON.parse(nuxt[1]) as unknown[]));
+      info = product ? toOfferInfo(product) : null;
+    } catch (error) {
+      console.warn(`Lidl ${id}: page data not readable:`, error instanceof Error ? error.message : error);
+    }
+  }
+
   for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try {
       const data = JSON.parse(m[1]) as { '@type'?: string; sku?: string; offers?: { price?: number }[] };
       if (data['@type'] !== 'Product') continue;
       if (data.sku && data.sku !== String(id)) continue;
       const price = Number(data.offers?.[0]?.price);
-      if (price > 0) return price;
+      if (price > 0) return { price, info };
     } catch {
       // not JSON we understand; try the next block
     }
   }
   throw new Error('no price on page');
+}
+
+/** Every product on the weekly offers page, with its price data. */
+async function lidlOffersPage(): Promise<LidlOfferInfo[]> {
+  const res = await fetchRetry(LIDL_OFFERS_URL, { headers: LIDL_HEADERS, redirect: 'follow' });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const html = await res.text();
+  const out: LidlOfferInfo[] = [];
+  for (const m of html.matchAll(/data-grid-data="([^"]*)"/g)) {
+    try {
+      const info = toOfferInfo(JSON.parse(decodeHtml(m[1])) as Record<string, unknown>);
+      if (info) out.push(info);
+    } catch {
+      // skip tiles we can't read
+    }
+  }
+  return out;
+}
+
+function decodeHtml(text: string): string {
+  return text
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#(\d+);/g, (_m, n) => String.fromCodePoint(Number(n)))
+    .replace(/&amp;/g, '&');
+}
+
+/** ISO time -> Dutch date (YYYY-MM-DD). */
+function nlDate(iso: string): string {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Amsterdam' }).format(new Date(iso));
+}
+
+const euro = (value: number) => `€${value.toFixed(2).replace('.', ',')}`;
+const MULTIBUY_TEXT = /\d\s*\+\s*\d|\d+\s*voor|2e|tweede|halve prijs/i;
+
+/** A price block that only runs for a while (not the open-ended shelf price, which ends in 2200). */
+function running(block: LidlPriceBlock | null | undefined, today: string): { from: string; until: string } | null {
+  if (!block?.startDate || !block.endDate) return null;
+  const until = nlDate(block.endDate);
+  if (until > '2100-01-01' || until < today) return null;
+  return { from: nlDate(block.startDate), until };
+}
+
+/**
+ * The best offer running today for one Lidl product: a Lidl Plus price or a
+ * temporary action price, whichever is lower. `regularCents` is the normal shelf price.
+ */
+export function lidlOffer(prices: LidlRegionPrices, regularCents: number, today: string): Offer | undefined {
+  const candidates: Offer[] = [];
+
+  const plus = prices.currentLidlPlusPrice;
+  const plusDates = running(plus?.price, today);
+  if (plus?.price?.price && plusDates) {
+    const text = plus.highlightText ?? plus.price.discount?.discountText ?? '';
+    if (MULTIBUY_TEXT.test(text)) {
+      candidates.push({ kind: 'multibuy', label: `Lidl Plus ${text.trim()}`, validFrom: plusDates.from, validUntil: plusDates.until });
+    } else if (cents(plus.price.price) < regularCents) {
+      candidates.push({
+        priceCents: cents(plus.price.price),
+        kind: 'price',
+        label: `Lidl Plus ${euro(plus.price.price)}`,
+        validFrom: plusDates.from,
+        validUntil: plusDates.until,
+      });
+    }
+  }
+
+  const action = prices.currentPrice;
+  const actionDates = running(action, today);
+  if (action?.price && actionDates) {
+    const text = action.discount?.discountText ?? '';
+    if (MULTIBUY_TEXT.test(text)) {
+      candidates.push({ kind: 'multibuy', label: text.trim(), validFrom: actionDates.from, validUntil: actionDates.until });
+    } else if (cents(action.price) < regularCents) {
+      candidates.push({
+        priceCents: cents(action.price),
+        kind: 'price',
+        label: `actie ${euro(action.price)}`,
+        validFrom: actionDates.from,
+        validUntil: actionDates.until,
+      });
+    }
+  }
+
+  const priced = candidates.filter((c) => c.kind === 'price').sort((a, b) => a.priceCents! - b.priceCents!);
+  return priced[0] ?? candidates[0];
+}
+
+/** Exact name match, allowing a plural: "Citroenen" = "citroen", "Rode uien" = "rode ui". */
+export function sameName(a: string, b: string): boolean {
+  const norm = (t: string) =>
+    t
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z0-9 ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  const forms = (t: string) => {
+    const n = norm(t);
+    return new Set([n, n.replace(/uien$/, 'ui'), n.replace(/eren$/, ''), n.replace(/(en|s)$/, '')]);
+  };
+  const fa = forms(a);
+  return [...forms(b)].some((f) => f.length > 2 && fa.has(f));
 }
 
 /** Lidl prices from Checkjebon, by boodschaapje.nl product id. */
@@ -297,14 +490,23 @@ async function main() {
 
   // Lidl (live pages)
   const lidlIds = [...new Set(keys.flatMap((k) => (mapping[k].lidl?.id ? [mapping[k].lidl!.id!] : [])))];
-  const lidlFound = new Map<number, number>();
+  const lidlFound = new Map<number, { price: number; info: LidlOfferInfo | null }>();
   await mapLimit(lidlIds, 4, async (id) => {
     try {
-      lidlFound.set(id, await lidlPrice(id));
+      lidlFound.set(id, await lidlPage(id));
     } catch (error) {
       console.warn(`Lidl ${id} failed:`, error instanceof Error ? error.message : error);
     }
   });
+
+  // Lidl (weekly offers page: Lidl Plus and action prices)
+  let lidlWeekly: LidlOfferInfo[] = [];
+  try {
+    lidlWeekly = await lidlOffersPage();
+  } catch (error) {
+    console.warn('Lidl offers page failed:', error instanceof Error ? error.message : error);
+  }
+  const weeklyById = new Map(lidlWeekly.map((o) => [o.productId, o]));
 
   // Lidl (receipt prices)
   let receipts = new Map<string, number>();
@@ -317,7 +519,7 @@ async function main() {
   }
 
   const products: PriceData['products'] = {};
-  const counts = { ahFresh: 0, ahStale: 0, ahMissing: 0, lidlLive: 0, lidlReceipt: 0, lidlManual: 0, lidlStale: 0, ahOffers: 0 };
+  const counts = { ahFresh: 0, ahStale: 0, ahMissing: 0, lidlLive: 0, lidlReceipt: 0, lidlManual: 0, lidlStale: 0, ahOffers: 0, lidlOffers: 0 };
 
   for (const key of keys) {
     const entry: Partial<Record<Store, Product>> = {};
@@ -344,11 +546,38 @@ async function main() {
     const lidl = mapping[key].lidl;
     const livePrice = lidl?.id ? lidlFound.get(lidl.id) : undefined;
     const receiptPrice = lidl?.receiptId ? receipts.get(lidl.receiptId) : undefined;
-    const price = livePrice ?? receiptPrice;
+    const price = livePrice ?? (receiptPrice ? { price: receiptPrice, info: null } : undefined);
     if (lidl && price) {
-      entry.lidl = { label: lidl.label, packSize: lidl.pack.size, packUnit: lidl.pack.unit, priceCents: cents(price) };
+      entry.lidl = { label: lidl.label, packSize: lidl.pack.size, packUnit: lidl.pack.unit, priceCents: cents(price.price) };
       if (livePrice) counts.lidlLive++;
       else counts.lidlReceipt++;
+
+      // Offer: from the product page, else the offers page by id, else by exact name and same pack.
+      const info =
+        livePrice?.info ??
+        (lidl.id ? weeklyById.get(lidl.id) : undefined) ??
+        lidlWeekly.find((o) => {
+          if (!sameName(o.title, key) && !sameName(o.title, lidl.label)) return false;
+          const pack = parsePack(o.packaging);
+          return pack !== null && pack.unit === lidl.pack.unit && pack.size === lidl.pack.size;
+        });
+      if (info) {
+        // During an action the shelf price on the page is the action price; use the struck-through
+        // or previous regular price instead.
+        const action = info.prices.currentPrice;
+        const deleted = action?.discount?.deletedPrice;
+        if (running(action, today) && action?.price && cents(action.price) >= entry.lidl.priceCents) {
+          const regular = deleted ? cents(deleted) : prev?.lidl && !prev.lidl.stale ? prev.lidl.priceCents : 0;
+          if (regular > entry.lidl.priceCents) entry.lidl.priceCents = regular;
+        }
+        const offer = lidlOffer(info.prices, entry.lidl.priceCents, today);
+        if (offer) {
+          entry.lidl.offer = offer;
+          counts.lidlOffers++;
+          const how = livePrice?.info ? 'page' : lidl.id && weeklyById.has(lidl.id) ? 'offers page, id' : `offers page, name "${info.title}"`;
+          console.log(`Lidl offer for "${key}": ${offer.label} t/m ${offer.validUntil} (${how})`);
+        }
+      }
     } else if (lidl && prev?.lidl && prev.lidl.label === lidl.label) {
       // Fetching failed: keep the last price rather than fall back to an estimate.
       entry.lidl = stale(prev.lidl);
@@ -364,7 +593,8 @@ async function main() {
 
   console.log(
     `AH: ${counts.ahFresh} fresh (${counts.ahOffers} with an offer), ${counts.ahStale} stale, ${counts.ahMissing} missing. ` +
-      `Lidl: ${counts.lidlLive} live, ${counts.lidlReceipt} from receipts, ${counts.lidlManual} manual, ${counts.lidlStale} stale.`,
+      `Lidl: ${counts.lidlLive} live, ${counts.lidlReceipt} from receipts, ${counts.lidlManual} manual, ${counts.lidlStale} stale, ${counts.lidlOffers} with an offer ` +
+      `(${lidlWeekly.length} products on the offers page).`,
   );
 
   if (counts.ahFresh === 0 && counts.lidlLive === 0) {

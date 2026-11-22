@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-21T13:28:51.039Z",
+ "generatedAt": "2026-11-22T12:41:39.125Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -111,7 +111,14 @@
     "label": "Rode snacktomaten 500 g",
     "packSize": 500,
     "packUnit": "g",
-    "priceCents": 275
+    "priceCents": 275,
+    "offer": {
+     "priceCents": 189,
+     "kind": "price",
+     "label": "Lidl Plus €1,89",
+     "validFrom": "2026-11-19",
+     "validUntil": "2026-11-29"
+    }
    }
   },
   "citroen": {
@@ -897,7 +904,14 @@
     "label": "Gewassen spinazie 450 g",
     "packSize": 450,
     "packUnit": "g",
-    "priceCents": 179
+    "priceCents": 179,
+    "offer": {
+     "priceCents": 139,
+     "kind": "price",
+     "label": "Lidl Plus €1,39",
+     "validFrom": "2026-11-16",
+     "validUntil": "2026-11-22"
+    }
    }
   },
   "sriracha": {

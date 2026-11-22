@@ -39,8 +39,8 @@ Only fresh sweet potato has no source. `lidl-manual.json` has an estimate of €
 garam masala, mango chutney, paneer, ras el hanout, sesamzaad, tacokruiden, tandoori kruiden, tikka masala kruiden, za'atar
 
 None of these is in the receipt data or on lidl.nl as a plain product. Add an entry to `lidl-manual.json` if Lidl has it.
+The app now treats the spice mixes and sesamzaad as voorraadkast, and prices paneer and mango chutney at AH for the Lidl total ("bij AH").
 
-Note: the app only names a cheaper store when both stores have the same number of items priced, so recipes that use these won't show a comparison.
 
 ## 4. Live lidl.nl matches to check
 
