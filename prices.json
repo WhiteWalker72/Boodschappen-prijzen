@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-22T12:41:39.125Z",
+ "generatedAt": "2026-11-23T15:59:03.027Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -21,7 +21,7 @@
     "label": "AH Aardappelschijfjes 600 g",
     "packSize": 600,
     "packUnit": "g",
-    "priceCents": 119
+    "priceCents": 125
    },
    "lidl": {
     "label": "Chef Select Aardappelschijfjes 700 g",
@@ -35,7 +35,7 @@
     "label": "AH Avocado per stuk",
     "packSize": 1,
     "packUnit": "stuks",
-    "priceCents": 139
+    "priceCents": 149
    },
    "lidl": {
     "label": "Avocado per stuk",
@@ -77,7 +77,7 @@
     "label": "AH Broccoli 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 259
+    "priceCents": 269
    },
    "lidl": {
     "label": "Broccoliroosjes 400 g",
@@ -126,7 +126,7 @@
     "label": "AH Citroen per stuk",
     "packSize": 1,
     "packUnit": "stuks",
-    "priceCents": 69
+    "priceCents": 75
    },
    "lidl": {
     "label": "Bio citroen per stuk",
@@ -210,7 +210,7 @@
     "label": "AH Griekse feta 200 g",
     "packSize": 200,
     "packUnit": "g",
-    "priceCents": 175
+    "priceCents": 169
    },
    "lidl": {
     "label": "Feta 200 g",
@@ -250,8 +250,8 @@
     "offer": {
      "kind": "multibuy",
      "label": "2 voor €5,00",
-     "validFrom": "2026-11-16",
-     "validUntil": "2026-11-22"
+     "validFrom": "2026-11-23",
+     "validUntil": "2026-11-29"
     }
    },
    "lidl": {
@@ -270,8 +270,8 @@
     "offer": {
      "kind": "multibuy",
      "label": "2 voor €5,00",
-     "validFrom": "2026-11-16",
-     "validUntil": "2026-11-22"
+     "validFrom": "2026-11-23",
+     "validUntil": "2026-11-29"
     }
    },
    "lidl": {
@@ -328,7 +328,7 @@
     "label": "AH Granaatappel per stuk",
     "packSize": 1,
     "packUnit": "stuks",
-    "priceCents": 199
+    "priceCents": 179
    },
    "lidl": {
     "label": "Granaatappel per stuk",
@@ -482,7 +482,7 @@
     "label": "AH Knoflooksaus 300 ml",
     "packSize": 300,
     "packUnit": "ml",
-    "priceCents": 114
+    "priceCents": 129
    },
    "lidl": {
     "label": "Knoflooksaus",
@@ -538,7 +538,7 @@
     "label": "AH Mini krieltjes 600 g",
     "packSize": 600,
     "packUnit": "g",
-    "priceCents": 119
+    "priceCents": 125
    },
    "lidl": {
     "label": "Chef Select Mini krieltjes naturel 1 kg",
@@ -580,7 +580,7 @@
     "label": "AH Terra Linzen 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 96
+    "priceCents": 98
    },
    "lidl": {
     "label": "Linzen 400 g",
@@ -616,7 +616,7 @@
     "label": "AH Mayonaise zacht en romig 170 ml",
     "packSize": 170,
     "packUnit": "ml",
-    "priceCents": 69
+    "priceCents": 89
    },
    "lidl": {
     "label": "Mayonaise in tube 170 ml",
@@ -736,7 +736,7 @@
     "label": "AH Pita broodjes 10 stuks",
     "packSize": 10,
     "packUnit": "stuks",
-    "priceCents": 79
+    "priceCents": 75
    },
    "lidl": {
     "label": "Tastino Pitabroodjes 400 g (5 stuks)",
@@ -814,13 +814,7 @@
     "label": "AH Roerbakgroente Italiaans 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 229,
-    "offer": {
-     "kind": "multibuy",
-     "label": "2 voor €3,99",
-     "validFrom": "2026-11-16",
-     "validUntil": "2026-11-22"
-    }
+    "priceCents": 229
    },
    "lidl": {
     "label": "Hollandse roerbakgroente 400 g",
@@ -911,7 +905,8 @@
      "label": "Lidl Plus €1,39",
      "validFrom": "2026-11-16",
      "validUntil": "2026-11-22"
-    }
+    },
+    "stale": true
    }
   },
   "sriracha": {
@@ -1013,7 +1008,7 @@
     "label": "AH Tomaten 500 g",
     "packSize": 500,
     "packUnit": "g",
-    "priceCents": 189
+    "priceCents": 199
    },
    "lidl": {
     "label": "Trostomaten 1 kg",
@@ -1055,7 +1050,7 @@
     "label": "AH Gele uien 3 stuks",
     "packSize": 3,
     "packUnit": "stuks",
-    "priceCents": 89
+    "priceCents": 95
    },
    "lidl": {
     "label": "Uien geel 1 kg",
@@ -1069,7 +1064,7 @@
     "label": "AH Vastkokende aardappelen 1 kg",
     "packSize": 1000,
     "packUnit": "g",
-    "priceCents": 129
+    "priceCents": 139
    },
    "lidl": {
     "label": "Aardappelen vastkokend 1 kg",
@@ -1209,7 +1204,7 @@
     "label": "AH Oranje zoete aardappel 1 kg",
     "packSize": 1000,
     "packUnit": "g",
-    "priceCents": 349
+    "priceCents": 379
    },
    "lidl": {
     "label": "Zoete aardappelen 1 kg",
