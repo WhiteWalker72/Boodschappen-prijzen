@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-25T15:37:04.853Z",
+ "generatedAt": "2026-11-26T15:17:52.274Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -253,7 +253,13 @@
     "label": "AH Cheddar geraspt 150 g",
     "packSize": 150,
     "packUnit": "g",
-    "priceCents": 299
+    "priceCents": 299,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 voor €5,00",
+     "validFrom": "2026-11-26",
+     "validUntil": "2026-11-29"
+    }
    },
    "lidl": {
     "label": "Cheddar geraspt 150 g",
@@ -267,7 +273,13 @@
     "label": "AH Mozzarella geraspt 150 g",
     "packSize": 150,
     "packUnit": "g",
-    "priceCents": 279
+    "priceCents": 279,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 voor €5,00",
+     "validFrom": "2026-11-26",
+     "validUntil": "2026-11-29"
+    }
    },
    "lidl": {
     "label": "Mozzarella geraspt 200 g",
@@ -895,13 +907,12 @@
     "packUnit": "g",
     "priceCents": 179,
     "offer": {
-     "priceCents": 139,
+     "priceCents": 129,
      "kind": "price",
-     "label": "Lidl Plus €1,39",
-     "validFrom": "2026-11-16",
-     "validUntil": "2026-11-22"
-    },
-    "stale": true
+     "label": "Lidl Plus €1,29",
+     "validFrom": "2026-11-26",
+     "validUntil": "2026-12-06"
+    }
    }
   },
   "sriracha": {
