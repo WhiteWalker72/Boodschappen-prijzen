@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-26T15:17:52.274Z",
+ "generatedAt": "2026-11-27T15:06:03.594Z",
  "products": {
   "aardappelkroketjes": {
    "ah": {
@@ -685,7 +685,7 @@
     "label": "Harvest Basket Ovenfriet 1 kg",
     "packSize": 1000,
     "packUnit": "g",
-    "priceCents": 148
+    "priceCents": 147
    }
   },
   "paneer": {
@@ -821,7 +821,13 @@
     "label": "AH Roerbakgroente Italiaans 400 g",
     "packSize": 400,
     "packUnit": "g",
-    "priceCents": 229
+    "priceCents": 229,
+    "offer": {
+     "kind": "multibuy",
+     "label": "2 voor €3,99",
+     "validFrom": "2026-11-30",
+     "validUntil": "2026-12-06"
+    }
    },
    "lidl": {
     "label": "Hollandse roerbakgroente 400 g",
